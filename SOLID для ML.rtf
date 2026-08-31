@@ -1,0 +1,760 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fmodern\fprq1\fcharset0 Liberation Mono{\*\falt Courier New};}{\f5\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f6\fmodern\fprq1\fcharset0 Noto Sans Mono CJK SC;}{\f7\fnil\fprq2\fcharset0 Noto Sans CJK SC;}{\f8\fnil\fprq2\fcharset0 Noto Sans Devanagari;}{\f9\fswiss\fprq0\fcharset128 Noto Sans Devanagari;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\widctlpar\hyphpar0\ltrpar\kerning1\cf0\rtlch\af8\afs24\alang1081\ltrch\hich\af3\afs24\alang1033\dbch\af10\langfe2052\loch\f3\fs24\lang1033 Normal;}
+{\*\cs15\snext15\rtlch\ab\ltrch\b Strong;}
+{\*\cs16\snext16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4 Source Text;}
+{\s17\sbasedon0\snext18\sb240\sa120\keepn\rtlch\af8\afs28\ltrch\hich\af5\afs28\dbch\af7\loch\f5\fs28 Heading;}
+{\s18\sbasedon0\snext18\sl276\slmult1\sb0\sa140 Body Text;}
+{\s19\sbasedon18\snext19\rtlch\af9\ltrch List;}
+{\s20\sbasedon0\snext20\sb120\sa120\noline\rtlch\af9\afs24\ai\ltrch\fs24\i caption;}
+{\s21\sbasedon0\snext21\noline\rtlch\af9\ltrch Index;}
+{\s22\sbasedon17\snext18\qc\rtlch\afs56\ab\ltrch\fs56\b Title;}
+{\s23\sbasedon0\snext23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20 Preformatted Text;}
+}{\*\listtable{\list\listtemplateid1
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi0\li0}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi0\li0}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi0\li0}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi0\li0}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi0\li0}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi0\li0}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi0\li0}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi0\li0}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi0\li0}\listid1}
+}{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}{\*\generator LibreOffice/25.8.7.3$Linux_X86_64 LibreOffice_project/580$Build-3}{\info{\creatim\yr2026\mo8\dy30\hr19\min31}{\revtim\yr2026\mo8\dy30\hr19\min35}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops}\deftab709
+\hyphauto1\viewscale220\formshade\nobrkwrptbl\paperh16838\paperw11906\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s22\qc\rtlch\afs56\ab\ltrch\fs56\b\qc\sb240\sa120\ltrpar{
+Single Responsibility Principle (SRP)}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs15\rtlch\ab\ltrch\hich\ab\dbch\ab\loch\b
+\u1063\'3f\u1090\'3f\u1086\'3f \u1101\'3f\u1090\'3f\u1086\'3f \u1086\'3f\u1079\'3f\u1085\'3f\u1072\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1090\'3f \u1074\'3f ML:}{
+ \u1056\'3f\u1072\'3f\u1079\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1103\'3f\u1081\'3f\u1090\'3f\u1077\'3f \u1101\'3f\u1090\'3f\u1072\'3f\u1087\'3f\u1099\'3f \u1087\'3f\u1072\'3f\u1081\'3f\u1087\'3f\u1083\'3f\u1072\'3f\u1081\'3f\u1085\'3f\u1072\'3f: \u1086\'3f\u1090\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f\u1085\'3f\u1099\'3f\u1081\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1091\'3f\u1083\'3f\u1100\'3f \u1076\'3f\u1083\'3f\u1103\'3f \u1079\'3f\u1072\'3f\u1075\'3f\u1088\'3f\u1091\'3f\u1079\'3f\u1082\'3f\u1080\'3f \u1076\'3f\u1072\'3f\u1085\'3f\u1085\'3f\u1099\'3f\u1093\'3f, \u1086\'3f\u1090\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f\u1085\'3f\u1099\'3f\u1081\'3f \u8212\'97 \u1076\'3f\u1083\'3f\u1103\'3f \u1087\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1086\'3f\u1073\'3f\u1088\'3f\u1072\'3f\u1073\'3f\u1086\'3f\u1090\'3f\u1082\'3f\u1080\'3f, \u1086\'3f\u1090\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f\u1085\'3f\u1099\'3f\u1081\'3f \u8212\'97 \u1076\'3f\u1083\'3f\u1103\'3f \u1086\'3f\u1073\'3f\u1091\'3f\u1095\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1103\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1080\'3f, \u1086\'3f\u1090\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f\u1085\'3f\u1099\'3f\u1081\'3f \u8212\'97 \u1076\'3f\u1083\'3f\u1103\'3f \u1074\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1076\'3f\u1072\'3f\u1094\'3f\u1080\'3f\u1080\'3f/\u1080\'3f\u1085\'3f\u1092\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1085\'3f\u1089\'3f\u1072\'3f. \u1069\'3f\u1090\'3f\u1086\'3f \u1091\'3f\u1087\'3f\u1088\'3f\u1086\'3f\u1097\'3f\u1072\'3f\u1077\'3f\u1090\'3f \u1090\'3f\u1077\'3f\u1089\'3f\u1090\'3f\u1080\'3f\u1088\'3f\u1086\'3f\u1074\'3f\u1072\'3f\u1085\'3f\u1080\'3f\u1077\'3f \u1080\'3f \u1086\'3f\u1090\'3f\u1083\'3f\u1072\'3f\u1076\'3f\u1082\'3f\u1091\'3f (\u1085\'3f\u1072\'3f\u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f, \u1077\'3f\u1089\'3f\u1083\'3f\u1080\'3f \u1084\'3f\u1077\'3f\u1085\'3f\u1103\'3f\u1077\'3f\u1090\'3f\u1089\'3f\u1103\'3f \u1080\'3f\u1089\'3f\u1090\'3f\u1086\'3f\u1095\'3f\u1085\'3f\u1080\'3f\u1082\'3f \u1076\'3f\u1072\'3f\u1085\'3f\u1085\'3f\u1099\'3f\u1093\'3f, \u1084\'3f\u1077\'3f\u1085\'3f\u1103\'3f\u1077\'3f\u1090\'3f\u1089\'3f\u1103\'3f \u1090\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1082\'3f\u1086\'3f \u1086\'3f\u1076\'3f\u1080\'3f\u1085\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1091\'3f\u1083\'3f\u1100\'3f).}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{
+\u1055\'3f\u1083\'3f\u1086\'3f\u1093\'3f\u1086\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u1086\'3f\u1076\'3f\u1085\'3f\u1072\'3f \u1089\'3f\u1090\'3f\u1088\'3f\u1091\'3f\u1082\'3f\u1090\'3f\u1091\'3f\u1088\'3f\u1072\'3f \u1076\'3f\u1077\'3f\u1083\'3f\u1072\'3f\u1077\'3f\u1090\'3f \u1074\'3f\u1089\'3f\u1105\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct BadMlPipeline \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1076\'3f\u1072\'3f\u1085\'3f\u1085\'3f\u1099\'3f\u1077\'3f \u1080\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f \u1074\'3f\u1085\'3f\u1091\'3f\u1090\'3f\u1088\'3f\u1080\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl BadMlPipeline \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn load_data(&self, path: &str) \{ /* \u1079\'3f\u1072\'3f\u1075\'3f\u1088\'3f\u1091\'3f\u1079\'3f\u1082\'3f\u1072\'3f */ \}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn preprocess(&mut self, data: Array2<f64>) \{ /* \u1087\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1086\'3f\u1073\'3f\u1088\'3f\u1072\'3f\u1073\'3f\u1086\'3f\u1090\'3f\u1082\'3f\u1072\'3f */ \}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn train(&mut self, x: Array2<f64>, y: Array1<f64>) \{ /* \u1086\'3f\u1073\'3f\u1091\'3f\u1095\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1077\'3f */ \}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn predict(&self, x: Array2<f64>) -> Array1<f64> \{ /* \u1087\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1089\'3f\u1082\'3f\u1072\'3f\u1079\'3f\u1072\'3f\u1085\'3f\u1080\'3f\u1077\'3f */ \}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\ql\ltrpar{
+\u1061\'3f\u1086\'3f\u1088\'3f\u1086\'3f\u1096\'3f\u1080\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u1082\'3f\u1072\'3f\u1078\'3f\u1076\'3f\u1072\'3f\u1103\'3f \u1089\'3f\u1090\'3f\u1088\'3f\u1091\'3f\u1082\'3f\u1090\'3f\u1091\'3f\u1088\'3f\u1072\'3f \u8212\'97 \u1086\'3f\u1076\'3f\u1085\'3f\u1072\'3f \u1086\'3f\u1090\'3f\u1074\'3f\u1077\'3f\u1090\'3f\u1089\'3f\u1090\'3f\u1074\'3f\u1077\'3f\u1085\'3f\u1085\'3f\u1086\'3f\u1089\'3f\u1090\'3f\u1100\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+use ndarray::\{Array1, Array2\};}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct DataLoader;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl DataLoader \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn load(&self, path: &str) -> Array2<f64> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1090\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1082\'3f\u1086\'3f \u1079\'3f\u1072\'3f\u1075\'3f\u1088\'3f\u1091\'3f\u1079\'3f\u1082\'3f\u1072\'3f \u1076\'3f\u1072\'3f\u1085\'3f\u1085\'3f\u1099\'3f\u1093\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+unimplemented!()}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct Preprocessor;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl Preprocessor \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn transform(&self, data: Array2<f64>) -> Array2<f64> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1090\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1082\'3f\u1086\'3f \u1087\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1086\'3f\u1073\'3f\u1088\'3f\u1072\'3f\u1073\'3f\u1086\'3f\u1090\'3f\u1082\'3f\u1072\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+unimplemented!()}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct Trainer;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl Trainer \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn fit(&self, x: Array2<f64>, y: Array1<f64>) -> Box<dyn Model> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1090\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1082\'3f\u1086\'3f \u1086\'3f\u1073\'3f\u1091\'3f\u1095\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1077\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+unimplemented!()}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait Model \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn predict(&self, x: Array2<f64>) -> Array1<f64>;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s22\qc\rtlch\afs56\ab\ltrch\fs56\b\qc\ltrpar{
+Open-Closed Principle (OCP)}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs15\rtlch\ab\ltrch\hich\ab\dbch\ab\loch\b
+\u1063\'3f\u1090\'3f\u1086\'3f \u1101\'3f\u1090\'3f\u1086\'3f \u1086\'3f\u1079\'3f\u1085\'3f\u1072\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1090\'3f \u1074\'3f ML:}{
+ \u1041\'3f\u1072\'3f\u1079\'3f\u1086\'3f\u1074\'3f\u1099\'3f\u1081\'3f \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1080\'3f \u1080\'3f\u1083\'3f\u1080\'3f \u1087\'3f\u1072\'3f\u1081\'3f\u1087\'3f\u1083\'3f\u1072\'3f\u1081\'3f\u1085\'3f\u1072\'3f \u1076\'3f\u1086\'3f\u1083\'3f\u1078\'3f\u1077\'3f\u1085\'3f \u1087\'3f\u1086\'3f\u1079\'3f\u1074\'3f\u1086\'3f\u1083\'3f\u1103\'3f\u1090\'3f\u1100\'3f \u1076\'3f\u1086\'3f\u1073\'3f\u1072\'3f\u1074\'3f\u1083\'3f\u1103\'3f\u1090\'3f\u1100\'3f \u1085\'3f\u1086\'3f\u1074\'3f\u1099\'3f\u1077\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1080\'3f/\u1090\'3f\u1088\'3f\u1072\'3f\u1085\'3f\u1089\'3f\u1092\'3f\u1086\'3f\u1088\'3f\u1084\'3f\u1072\'3f\u1094\'3f\u1080\'3f\u1080\'3f \u1095\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1079\'3f \u1085\'3f\u1072\'3f\u1089\'3f\u1083\'3f\u1077\'3f\u1076\'3f\u1086\'3f\u1074\'3f\u1072\'3f\u1085\'3f\u1080\'3f\u1077\'3f \u1080\'3f\u1083\'3f\u1080\'3f \u1082\'3f\u1086\'3f\u1084\'3f\u1087\'3f\u1086\'3f\u1079\'3f\u1080\'3f\u1094\'3f\u1080\'3f\u1102\'3f, \u1085\'3f\u1077\'3f \u1084\'3f\u1077\'3f\u1085\'3f\u1103\'3f\u1103\'3f \u1089\'3f\u1091\'3f\u1097\'3f\u1077\'3f\u1089\'3f\u1090\'3f\u1074\'3f\u1091\'3f\u1102\'3f\u1097\'3f\u1080\'3f\u1081\'3f \u1082\'3f\u1086\'3f\u1076\'3f. \u1053\'3f\u1072\'3f\u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f, \u1073\'3f\u1072\'3f\u1079\'3f\u1086\'3f\u1074\'3f\u1099\'3f\u1081\'3f \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f Trainer \u1089\'3f \u1084\'3f\u1077\'3f\u1090\'3f\u1086\'3f\u1076\'3f\u1086\'3f\u1084\'3f fit(), \u1082\'3f\u1086\'3f\u1090\'3f\u1086\'3f\u1088\'3f\u1099\'3f\u1081\'3f \u1084\'3f\u1086\'3f\u1078\'3f\u1085\'3f\u1086\'3f \u1088\'3f\u1072\'3f\u1089\'3f\u1096\'3f\u1080\'3f\u1088\'3f\u1103\'3f\u1090\'3f\u1100\'3f \u1076\'3f\u1083\'3f\u1103\'3f \u1085\'3f\u1086\'3f\u1074\'3f\u1099\'3f\u1093\'3f \u1072\'3f\u1083\'3f\u1075\'3f\u1086\'3f\u1088\'3f\u1080\'3f\u1090\'3f\u1084\'3f\u1086\'3f\u1074\'3f (XGBoost, NeuralNet), \u1085\'3f\u1077\'3f \u1090\'3f\u1088\'3f\u1086\'3f\u1075\'3f\u1072\'3f\u1103\'3f \u1086\'3f\u1089\'3f\u1085\'3f\u1086\'3f\u1074\'3f\u1085\'3f\u1086\'3f\u1081\'3f \u1082\'3f\u1086\'3f\u1076\'3f.}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{
+\u1055\'3f\u1083\'3f\u1086\'3f\u1093\'3f\u1086\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u1095\'3f\u1090\'3f\u1086\'3f\u1073\'3f\u1099\'3f \u1076\'3f\u1086\'3f\u1073\'3f\u1072\'3f\u1074\'3f\u1080\'3f\u1090\'3f\u1100\'3f \u1085\'3f\u1086\'3f\u1074\'3f\u1091\'3f\u1102\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f, \u1084\'3f\u1077\'3f\u1085\'3f\u1103\'3f\u1077\'3f\u1084\'3f \u1089\'3f\u1091\'3f\u1097\'3f\u1077\'3f\u1089\'3f\u1090\'3f\u1074\'3f\u1091\'3f\u1102\'3f\u1097\'3f\u1080\'3f\u1081\'3f \u1082\'3f\u1086\'3f\u1076\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+enum ModelType \{ Linear, Tree \}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct BadTrainer;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl BadTrainer \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn train(&self, model_type: ModelType, x: Array2<f64>, y: Array1<f64>) -> Box<dyn Model> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+match model_type \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+            }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+ModelType::Linear => \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+                }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1086\'3f\u1073\'3f\u1091\'3f\u1095\'3f\u1080\'3f\u1090\'3f\u1100\'3f \u1083\'3f\u1080\'3f\u1085\'3f\u1077\'3f\u1081\'3f\u1085\'3f\u1091\'3f\u1102\'3f \u1088\'3f\u1077\'3f\u1075\'3f\u1088\'3f\u1077\'3f\u1089\'3f\u1089\'3f\u1080\'3f\u1102\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+            }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+            }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+ModelType::Tree => \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+                }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1086\'3f\u1073\'3f\u1091\'3f\u1095\'3f\u1080\'3f\u1090\'3f\u1100\'3f \u1076\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1074\'3f\u1086\'3f (\u1076\'3f\u1086\'3f\u1073\'3f\u1072\'3f\u1074\'3f\u1080\'3f\u1083\'3f\u1080\'3f \u1073\'3f\u1099\'3f \u1077\'3f\u1097\'3f\u1105\'3f \u1086\'3f\u1076\'3f\u1080\'3f\u1085\'3f \u1084\'3f\u1072\'3f\u1090\'3f\u1095\'3f)}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+            }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+unimplemented!()}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\ql\ltrpar{
+\u1061\'3f\u1086\'3f\u1088\'3f\u1086\'3f\u1096\'3f\u1080\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u1088\'3f\u1072\'3f\u1089\'3f\u1096\'3f\u1080\'3f\u1088\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1077\'3f \u1095\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1079\'3f \u1085\'3f\u1086\'3f\u1074\'3f\u1099\'3f\u1077\'3f \u1088\'3f\u1077\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1079\'3f\u1072\'3f\u1094\'3f\u1080\'3f\u1080\'3f \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f\u1072\'3f, \u1073\'3f\u1077\'3f\u1079\'3f \u1080\'3f\u1079\'3f\u1084\'3f\u1077\'3f\u1085\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1103\'3f \u1073\'3f\u1072\'3f\u1079\'3f\u1086\'3f\u1074\'3f\u1086\'3f\u1075\'3f\u1086\'3f \u1082\'3f\u1086\'3f\u1076\'3f\u1072\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait ModelFactory \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn create(&self) -> Box<dyn Model>;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn train(&self, x: Array2<f64>, y: Array1<f64>) -> Box<dyn Model> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+let mut model = self.create();}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1086\'3f\u1073\'3f\u1097\'3f\u1072\'3f\u1103\'3f \u1083\'3f\u1086\'3f\u1075\'3f\u1080\'3f\u1082\'3f\u1072\'3f \u1086\'3f\u1073\'3f\u1091\'3f\u1095\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1103\'3f (\u1085\'3f\u1072\'3f\u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f, \u1075\'3f\u1088\'3f\u1072\'3f\u1076\'3f\u1080\'3f\u1077\'3f\u1085\'3f\u1090\'3f\u1085\'3f\u1099\'3f\u1081\'3f \u1089\'3f\u1087\'3f\u1091\'3f\u1089\'3f\u1082\'3f)}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// ...}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+model}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct LinearRegressionFactory;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl ModelFactory for LinearRegressionFactory \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn create(&self) -> Box<dyn Model> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+Box::new(LinearRegression::default())}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1044\'3f\u1086\'3f\u1073\'3f\u1072\'3f\u1074\'3f\u1083\'3f\u1103\'3f\u1077\'3f\u1084\'3f \u1085\'3f\u1086\'3f\u1074\'3f\u1091\'3f\u1102\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f \u8212\'97 \u1087\'3f\u1088\'3f\u1086\'3f\u1089\'3f\u1090\'3f\u1086\'3f \u1085\'3f\u1086\'3f\u1074\'3f\u1072\'3f\u1103\'3f \u1089\'3f\u1090\'3f\u1088\'3f\u1091\'3f\u1082\'3f\u1090\'3f\u1091\'3f\u1088\'3f\u1072\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct DecisionTreeFactory;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl ModelFactory for DecisionTreeFactory \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn create(&self) -> Box<dyn Model> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+Box::new(DecisionTree::default())}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s22\qc\rtlch\afs56\ab\ltrch\fs56\b\qc\ltrpar{
+Liskov Substitution Principle (LSP)}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs15\rtlch\ab\ltrch\hich\ab\dbch\ab\loch\b
+\u1063\'3f\u1090\'3f\u1086\'3f \u1101\'3f\u1090\'3f\u1086\'3f \u1086\'3f\u1079\'3f\u1085\'3f\u1072\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1090\'3f \u1074\'3f ML:}{
+ \u1045\'3f\u1089\'3f\u1083\'3f\u1080\'3f \u1091\'3f \u1074\'3f\u1072\'3f\u1089\'3f \u1077\'3f\u1089\'3f\u1090\'3f\u1100\'3f \u1073\'3f\u1072\'3f\u1079\'3f\u1086\'3f\u1074\'3f\u1099\'3f\u1081\'3f \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f Model \u1089\'3f \u1084\'3f\u1077\'3f\u1090\'3f\u1086\'3f\u1076\'3f\u1086\'3f\u1084\'3f predict(), \u1090\'3f\u1086\'3f \u1083\'3f\u1102\'3f\u1073\'3f\u1086\'3f\u1081\'3f \u1085\'3f\u1072\'3f\u1089\'3f\u1083\'3f\u1077\'3f\u1076\'3f\u1085\'3f\u1080\'3f\u1082\'3f (\u1085\'3f\u1072\'3f\u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f, LinearRegressionModel \u1080\'3f\u1083\'3f\u1080\'3f RandomForestModel) \u1076\'3f\u1086\'3f\u1083\'3f\u1078\'3f\u1077\'3f\u1085\'3f \u1074\'3f\u1086\'3f\u1079\'3f\u1074\'3f\u1088\'3f\u1072\'3f\u1097\'3f\u1072\'3f\u1090\'3f\u1100\'3f \u1087\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1089\'3f\u1082\'3f\u1072\'3f\u1079\'3f\u1072\'3f\u1085\'3f\u1080\'3f\u1103\'3f \u1074\'3f \u1090\'3f\u1086\'3f\u1084\'3f \u1078\'3f\u1077\'3f \u1092\'3f\u1086\'3f\u1088\'3f\u1084\'3f\u1072\'3f\u1090\'3f\u1077\'3f \u1080\'3f \u1089\'3f \u1090\'3f\u1077\'3f\u1084\'3f \u1078\'3f\u1077\'3f \u1087\'3f\u1086\'3f\u1074\'3f\u1077\'3f\u1076\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1077\'3f\u1084\'3f (\u1085\'3f\u1077\'3f \u1073\'3f\u1088\'3f\u1086\'3f\u1089\'3f\u1072\'3f\u1090\'3f\u1100\'3f \u1085\'3f\u1077\'3f\u1086\'3f\u1078\'3f\u1080\'3f\u1076\'3f\u1072\'3f\u1085\'3f\u1085\'3f\u1099\'3f\u1077\'3f \u1080\'3f\u1089\'3f\u1082\'3f\u1083\'3f\u1102\'3f\u1095\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1103\'3f, \u1085\'3f\u1077\'3f \u1084\'3f\u1077\'3f\u1085\'3f\u1103\'3f\u1090\'3f\u1100\'3f \u1090\'3f\u1080\'3f\u1087\'3f \u1074\'3f\u1099\'3f\u1074\'3f\u1086\'3f\u1076\'3f\u1072\'3f).}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{
+\u1055\'3f\u1083\'3f\u1086\'3f\u1093\'3f\u1086\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u1087\'3f\u1086\'3f\u1076\'3f\u1090\'3f\u1080\'3f\u1087\'3f \u1084\'3f\u1077\'3f\u1085\'3f\u1103\'3f\u1077\'3f\u1090\'3f \u1082\'3f\u1086\'3f\u1085\'3f\u1090\'3f\u1088\'3f\u1072\'3f\u1082\'3f\u1090\'3f \u8212\'97 \u1074\'3f\u1086\'3f\u1079\'3f\u1074\'3f\u1088\'3f\u1072\'3f\u1097\'3f\u1072\'3f\u1077\'3f\u1090\'3f \u1076\'3f\u1088\'3f\u1091\'3f\u1075\'3f\u1086\'3f\u1081\'3f \u1090\'3f\u1080\'3f\u1087\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait BaseModel \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn predict(&self, x: Array2<f64>) -> Array1<f64>; // \u1074\'3f\u1089\'3f\u1077\'3f\u1075\'3f\u1076\'3f\u1072\'3f ndarray}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct BadNeuralNet;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl BaseModel for BadNeuralNet \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn predict(&self, x: Array2<f64>) -> Array1<f64> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1074\'3f\u1086\'3f\u1079\'3f\u1074\'3f\u1088\'3f\u1072\'3f\u1097\'3f\u1072\'3f\u1077\'3f\u1084\'3f Vec<f64> \u1074\'3f\u1084\'3f\u1077\'3f\u1089\'3f\u1090\'3f\u1086\'3f Array1 \u8212\'97 \u1085\'3f\u1072\'3f\u1088\'3f\u1091\'3f\u1096\'3f\u1077\'3f\u1085\'3f\u1080\'3f\u1077\'3f!}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+unimplemented!()}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\ql\ltrpar{
+\u1061\'3f\u1086\'3f\u1088\'3f\u1086\'3f\u1096\'3f\u1080\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u1074\'3f\u1089\'3f\u1077\'3f \u1088\'3f\u1077\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1079\'3f\u1072\'3f\u1094\'3f\u1080\'3f\u1080\'3f \u1089\'3f\u1086\'3f\u1093\'3f\u1088\'3f\u1072\'3f\u1085\'3f\u1103\'3f\u1102\'3f\u1090\'3f \u1086\'3f\u1076\'3f\u1080\'3f\u1085\'3f\u1072\'3f\u1082\'3f\u1086\'3f\u1074\'3f\u1099\'3f\u1081\'3f \u1082\'3f\u1086\'3f\u1085\'3f\u1090\'3f\u1088\'3f\u1072\'3f\u1082\'3f\u1090\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait Model \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn predict(&self, x: &Array2<f64>) -> Array1<f64>;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct LinearRegression \{ weights: Array1<f64> \}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl Model for LinearRegression \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn predict(&self, x: &Array2<f64>) -> Array1<f64> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+x.dot(&self.weights)}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct TorchModel \{ /* \u1086\'3f\u1073\'3f\u1105\'3f\u1088\'3f\u1090\'3f\u1082\'3f\u1072\'3f \u1085\'3f\u1072\'3f\u1076\'3f tch-rs */ \}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl Model for TorchModel \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn predict(&self, x: &Array2<f64>) -> Array1<f64> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1082\'3f\u1086\'3f\u1085\'3f\u1074\'3f\u1077\'3f\u1088\'3f\u1090\'3f\u1080\'3f\u1088\'3f\u1091\'3f\u1077\'3f\u1084\'3f \u1074\'3f \u1090\'3f\u1077\'3f\u1085\'3f\u1079\'3f\u1086\'3f\u1088\'3f, \u1087\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1089\'3f\u1082\'3f\u1072\'3f\u1079\'3f\u1099\'3f\u1074\'3f\u1072\'3f\u1077\'3f\u1084\'3f, \u1074\'3f\u1086\'3f\u1079\'3f\u1074\'3f\u1088\'3f\u1072\'3f\u1097\'3f\u1072\'3f\u1077\'3f\u1084\'3f Array1<f64>}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+unimplemented!()}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s22\qc\rtlch\afs56\ab\ltrch\fs56\b\qc\ltrpar{
+Interface Segregation Principle (ISP)}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs15\rtlch\ab\ltrch\hich\ab\dbch\ab\loch\b
+\u1063\'3f\u1090\'3f\u1086\'3f \u1101\'3f\u1090\'3f\u1086\'3f \u1086\'3f\u1079\'3f\u1085\'3f\u1072\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1090\'3f \u1074\'3f ML:}{
+ \u1042\'3f\u1084\'3f\u1077\'3f\u1089\'3f\u1090\'3f\u1086\'3f \u1086\'3f\u1076\'3f\u1085\'3f\u1086\'3f\u1075\'3f\u1086\'3f \u1086\'3f\u1075\'3f\u1088\'3f\u1086\'3f\u1084\'3f\u1085\'3f\u1086\'3f\u1075\'3f\u1086\'3f \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f\u1072\'3f MLPipeline \u1089\'3f \u1084\'3f\u1077\'3f\u1090\'3f\u1086\'3f\u1076\'3f\u1072\'3f\u1084\'3f\u1080\'3f \u1076\'3f\u1083\'3f\u1103\'3f \u1074\'3f\u1089\'3f\u1077\'3f\u1075\'3f\u1086\'3f (load, preprocess, train, evaluate, deploy) \u1089\'3f\u1086\'3f\u1079\'3f\u1076\'3f\u1072\'3f\u1074\'3f\u1072\'3f\u1081\'3f\u1090\'3f\u1077\'3f \u1086\'3f\u1090\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f\u1085\'3f\u1099\'3f\u1077\'3f \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f\u1099\'3f: DataLoader, Preprocessor, Trainer, Evaluator. \u1069\'3f\u1090\'3f\u1086\'3f \u1086\'3f\u1089\'3f\u1086\'3f\u1073\'3f\u1077\'3f\u1085\'3f\u1085\'3f\u1086\'3f \u1087\'3f\u1086\'3f\u1083\'3f\u1077\'3f\u1079\'3f\u1085\'3f\u1086\'3f \u1074\'3f \u1073\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1096\'3f\u1080\'3f\u1093\'3f \u1082\'3f\u1086\'3f\u1084\'3f\u1072\'3f\u1085\'3f\u1076\'3f\u1072\'3f\u1093\'3f, \u1075\'3f\u1076\'3f\u1077\'3f \u1088\'3f\u1072\'3f\u1079\'3f\u1085\'3f\u1099\'3f\u1077\'3f \u1083\'3f\u1102\'3f\u1076\'3f\u1080\'3f \u1088\'3f\u1072\'3f\u1073\'3f\u1086\'3f\u1090\'3f\u1072\'3f\u1102\'3f\u1090\'3f \u1089\'3f \u1088\'3f\u1072\'3f\u1079\'3f\u1085\'3f\u1099\'3f\u1084\'3f\u1080\'3f \u1095\'3f\u1072\'3f\u1089\'3f\u1090\'3f\u1103\'3f\u1084\'3f\u1080\'3f.}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{
+\u1055\'3f\u1083\'3f\u1086\'3f\u1093\'3f\u1086\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u171\'ab\u1078\'3f\u1080\'3f\u1088\'3f\u1085\'3f\u1099\'3f\u1081\'3f\u187\'bb \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f \u1079\'3f\u1072\'3f\u1089\'3f\u1090\'3f\u1072\'3f\u1074\'3f\u1083\'3f\u1103\'3f\u1077\'3f\u1090\'3f \u1088\'3f\u1077\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1079\'3f\u1086\'3f\u1074\'3f\u1099\'3f\u1074\'3f\u1072\'3f\u1090\'3f\u1100\'3f \u1085\'3f\u1077\'3f\u1085\'3f\u1091\'3f\u1078\'3f\u1085\'3f\u1086\'3f\u1077\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait BigMlTrait \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn load_data(&self);}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn preprocess(&self);}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn train(&self);}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn evaluate(&self);}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn deploy(&self);}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1052\'3f\u1072\'3f\u1083\'3f\u1077\'3f\u1085\'3f\u1100\'3f\u1082\'3f\u1080\'3f\u1081\'3f \u1082\'3f\u1086\'3f\u1084\'3f\u1087\'3f\u1086\'3f\u1085\'3f\u1077\'3f\u1085\'3f\u1090\'3f \u1074\'3f\u1099\'3f\u1085\'3f\u1091\'3f\u1078\'3f\u1076\'3f\u1077\'3f\u1085\'3f \u1088\'3f\u1077\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1079\'3f\u1086\'3f\u1074\'3f\u1099\'3f\u1074\'3f\u1072\'3f\u1090\'3f\u1100\'3f \u1074\'3f\u1089\'3f\u1105\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct SimplePreprocessor;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl BigMlTrait for SimplePreprocessor \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn load_data(&self) \{ unimplemented!() \}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// ...}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\ql\ltrpar{
+\u1061\'3f\u1086\'3f\u1088\'3f\u1086\'3f\u1096\'3f\u1080\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u1084\'3f\u1077\'3f\u1083\'3f\u1082\'3f\u1080\'3f\u1077\'3f \u1089\'3f\u1087\'3f\u1077\'3f\u1094\'3f\u1080\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1079\'3f\u1080\'3f\u1088\'3f\u1086\'3f\u1074\'3f\u1072\'3f\u1085\'3f\u1085\'3f\u1099\'3f\u1077\'3f \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f\u1099\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait DataLoaderTrait \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn load(&self, path: &str) -> Array2<f64>;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait PreprocessorTrait \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn transform(&self, data: Array2<f64>) -> Array2<f64>;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait TrainerTrait \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn fit(&self, x: Array2<f64>, y: Array1<f64>) -> Box<dyn Model>;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait EvaluatorTrait \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn evaluate(&self, model: &dyn Model, x: Array2<f64>, y: Array1<f64>) -> f64;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1058\'3f\u1077\'3f\u1087\'3f\u1077\'3f\u1088\'3f\u1100\'3f \u1082\'3f\u1072\'3f\u1078\'3f\u1076\'3f\u1099\'3f\u1081\'3f \u1082\'3f\u1086\'3f\u1084\'3f\u1087\'3f\u1086\'3f\u1085\'3f\u1077\'3f\u1085\'3f\u1090\'3f \u1088\'3f\u1077\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1079\'3f\u1091\'3f\u1077\'3f\u1090\'3f \u1090\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1082\'3f\u1086\'3f \u1085\'3f\u1091\'3f\u1078\'3f\u1085\'3f\u1086\'3f\u1077\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct MyPreprocessor;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl PreprocessorTrait for MyPreprocessor \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn transform(&self, data: Array2<f64>) -> Array2<f64> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+unimplemented!()}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s22\qc\rtlch\afs56\ab\ltrch\fs56\b\qc\ltrpar{
+Dependency Inversion Principle (DIP)}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs15\rtlch\ab\ltrch\hich\ab\dbch\ab\loch\b
+\u1063\'3f\u1090\'3f\u1086\'3f \u1101\'3f\u1090\'3f\u1086\'3f \u1086\'3f\u1079\'3f\u1085\'3f\u1072\'3f\u1095\'3f\u1072\'3f\u1077\'3f\u1090\'3f \u1074\'3f ML:}{
+ \u1042\'3f\u1084\'3f\u1077\'3f\u1089\'3f\u1090\'3f\u1086\'3f \u1078\'3f\u1105\'3f\u1089\'3f\u1090\'3f\u1082\'3f\u1086\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1074\'3f\u1103\'3f\u1079\'3f\u1082\'3f\u1080\'3f \u1082\'3f \u1082\'3f\u1086\'3f\u1085\'3f\u1082\'3f\u1088\'3f\u1077\'3f\u1090\'3f\u1085\'3f\u1086\'3f\u1081\'3f \u1073\'3f\u1080\'3f\u1073\'3f\u1083\'3f\u1080\'3f\u1086\'3f\u1090\'3f\u1077\'3f\u1082\'3f\u1077\'3f (\u1085\'3f\u1072\'3f\u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f, sklearn.LinearRegression) \u1080\'3f\u1089\'3f\u1087\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1079\'3f\u1091\'3f\u1081\'3f\u1090\'3f\u1077\'3f \u1072\'3f\u1073\'3f\u1089\'3f\u1090\'3f\u1088\'3f\u1072\'3f\u1082\'3f\u1094\'3f\u1080\'3f\u1080\'3f \u1080\'3f dependency injection. \u1053\'3f\u1072\'3f\u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f, \u1087\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1072\'3f\u1074\'3f\u1072\'3f\u1081\'3f\u1090\'3f\u1077\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f \u1080\'3f\u1083\'3f\u1080\'3f \u1076\'3f\u1072\'3f\u1090\'3f\u1072\'3f\u1083\'3f\u1086\'3f\u1072\'3f\u1076\'3f\u1077\'3f\u1088\'3f \u1082\'3f\u1072\'3f\u1082\'3f \u1087\'3f\u1072\'3f\u1088\'3f\u1072\'3f\u1084\'3f\u1077\'3f\u1090\'3f\u1088\'3f \u1074\'3f \u1082\'3f\u1086\'3f\u1085\'3f\u1089\'3f\u1090\'3f\u1088\'3f\u1091\'3f\u1082\'3f\u1090\'3f\u1086\'3f\u1088\'3f \u1087\'3f\u1072\'3f\u1081\'3f\u1087\'3f\u1083\'3f\u1072\'3f\u1081\'3f\u1085\'3f\u1072\'3f (\u1095\'3f\u1072\'3f\u1089\'3f\u1090\'3f\u1086\'3f \u1088\'3f\u1077\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1079\'3f\u1091\'3f\u1077\'3f\u1090\'3f\u1089\'3f\u1103\'3f \u1095\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1079\'3f \u1082\'3f\u1086\'3f\u1085\'3f\u1092\'3f\u1080\'3f\u1075\'3f\u1080\'3f \u1080\'3f\u1083\'3f\u1080\'3f \u1092\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1084\'3f\u1074\'3f\u1086\'3f\u1088\'3f\u1082\'3f\u1080\'3f \u1074\'3f\u1088\'3f\u1086\'3f\u1076\'3f\u1077\'3f ZenML, Metaflow, MLflow).}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar{
+\u1055\'3f\u1083\'3f\u1086\'3f\u1093\'3f\u1086\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u1074\'3f\u1099\'3f\u1089\'3f\u1086\'3f\u1082\'3f\u1086\'3f\u1091\'3f\u1088\'3f\u1086\'3f\u1074\'3f\u1085\'3f\u1077\'3f\u1074\'3f\u1099\'3f\u1081\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1091\'3f\u1083\'3f\u1100\'3f \u1079\'3f\u1072\'3f\u1074\'3f\u1080\'3f\u1089\'3f\u1080\'3f\u1090\'3f \u1086\'3f\u1090\'3f \u1082\'3f\u1086\'3f\u1085\'3f\u1082\'3f\u1088\'3f\u1077\'3f\u1090\'3f\u1085\'3f\u1086\'3f\u1081\'3f \u1088\'3f\u1077\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1079\'3f\u1072\'3f\u1094\'3f\u1080\'3f\u1080\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct LinearRegression; // \u1082\'3f\u1086\'3f\u1085\'3f\u1082\'3f\u1088\'3f\u1077\'3f\u1090\'3f\u1085\'3f\u1072\'3f\u1103\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1100\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct BadPipeline \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+model: LinearRegression, // \u1078\'3f\u1105\'3f\u1089\'3f\u1090\'3f\u1082\'3f\u1086\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1074\'3f\u1103\'3f\u1079\'3f\u1072\'3f\u1085\'3f\u1099\'3f \u1082\'3f \u1086\'3f\u1076\'3f\u1085\'3f\u1086\'3f\u1081\'3f \u1084\'3f\u1086\'3f\u1076\'3f\u1077\'3f\u1083\'3f\u1080\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\ql\ltrpar{
+\u1061\'3f\u1086\'3f\u1088\'3f\u1086\'3f\u1096\'3f\u1080\'3f\u1081\'3f \u1087\'3f\u1088\'3f\u1080\'3f\u1084\'3f\u1077\'3f\u1088\'3f (\u1079\'3f\u1072\'3f\u1074\'3f\u1080\'3f\u1089\'3f\u1080\'3f\u1084\'3f\u1086\'3f\u1089\'3f\u1090\'3f\u1100\'3f \u1086\'3f\u1090\'3f \u1072\'3f\u1073\'3f\u1089\'3f\u1090\'3f\u1088\'3f\u1072\'3f\u1082\'3f\u1094\'3f\u1080\'3f\u1080\'3f + \u1080\'3f\u1085\'3f\u1098\'3f\u1077\'3f\u1082\'3f\u1094\'3f\u1080\'3f\u1103\'3f \u1095\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1079\'3f \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f):}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+trait Model: Send + Sync \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn predict(&self, x: &Array2<f64>) -> Array1<f64>;}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+struct MlPipeline<M: Model> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+model: M, // generic \u1085\'3f\u1072\'3f\u1076\'3f \u1090\'3f\u1088\'3f\u1077\'3f\u1081\'3f\u1090\'3f\u1086\'3f\u1084\'3f}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+impl<M: Model> MlPipeline<M> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn new(model: M) -> Self \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+Self \{ model \}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn run(&self, x: &Array2<f64>) -> Array1<f64> \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+        }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+self.model.predict(x)}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1048\'3f\u1089\'3f\u1087\'3f\u1086\'3f\u1083\'3f\u1100\'3f\u1079\'3f\u1086\'3f\u1074\'3f\u1072\'3f\u1085\'3f\u1080\'3f\u1077\'3f:}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+fn main() \{}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+let linear = LinearRegression \{ weights: Array1::zeros(10) \};}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+let pipeline = MlPipeline::new(linear);}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// \u1052\'3f\u1086\'3f\u1078\'3f\u1085\'3f\u1086\'3f \u1087\'3f\u1077\'3f\u1088\'3f\u1077\'3f\u1076\'3f\u1072\'3f\u1090\'3f\u1100\'3f \u1083\'3f\u1102\'3f\u1073\'3f\u1091\'3f\u1102\'3f \u1076\'3f\u1088\'3f\u1091\'3f\u1075\'3f\u1091\'3f\u1102\'3f \u1088\'3f\u1077\'3f\u1072\'3f\u1083\'3f\u1080\'3f\u1079\'3f\u1072\'3f\u1094\'3f\u1080\'3f\u1102\'3f Model}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// let tree = DecisionTree \{ ... \};}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+    }{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+// let pipeline = MlPipeline::new(tree);}
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par \pard\plain \s23\sb0\sa0\rtlch\af4\afs20\ltrch\hich\af4\afs20\dbch\af6\loch\f4\fs20\sl276\slmult1\ql\sb0\sa140\ltrpar{\cs16\rtlch\af4\ltrch\hich\af4\dbch\af6\loch\f4
+\}}
+\par \pard\plain \s18\sl276\slmult1\sb0\sa140\sl276\slmult1\ql\sb0\sa140\ltrpar
+
+\par }
