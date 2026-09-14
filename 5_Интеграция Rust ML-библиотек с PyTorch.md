@@ -1,15 +1,19 @@
-Способы интеграции
+# Способы интеграции
+
 В экосистеме Rust для ML (особенно Burn) интеграция с PyTorch реализуется несколькими способами. Актуальный подход — импорт предобученных весов из PyTorch, а не прямой runtime-зависимости от libtorch (хотя она возможна). Это обеспечивает переносимость: модель из PyTorch запускается на native Rust-бэкендах Burn (NdArray, WGPU и т.д.) без overhead.
 Ранее популярный backend burn-tch (на базе tch-rs и libtorch) всё ещё существует как отдельный crate, но в основной документации Burn акцент сместился на импорт весов и native execution. Прямой LibTorch-backend реже используется из-за зависимости от тяжёлой C++ библиотеки.
-1. Основной способ: Импорт весов из PyTorch в Burn (рекомендуется)
+
+**1. Основной способ: Импорт весов из PyTorch в Burn (рекомендуется)**
 Используйте crate burn-import для загрузки .pth файлов (стандартный формат PyTorch). Это конвертирует веса в Burn-формат (record), совместимый с любым бэкендом.
-Зависимости в Cargo.toml:
+
+**Зависимости в Cargo.toml:**
 [dependencies]
 burn = { version = "0.13.0", features = ["ndarray"] }  # или "wgpu" для GPU
 burn-import = "0.13.0"
-Пример кода: Загрузка предобученной ResNet-18 из PyTorch
+
+**Пример кода: Загрузка предобученной ResNet-18 из PyTorch**
 (Адаптировано из официального блога Burn. Скачайте resnet18-f37072fd.pth с torchvision.)
-use burn::{
+`use burn::{
     prelude::*,
     module::Module,
     config::Config,
@@ -59,20 +63,25 @@ fn main() {
 
     // Теперь model готова к inference на выбранном бэкенде
     println!("Модель с весами PyTorch загружена: {model:?}");
-}
-Преимущества:
+}`
+
+**Преимущества:**
     • Нет runtime-зависимости от PyTorch.
     • Работает на WGPU (Vulkan/Metal/DirectX) для кросс-платформенного GPU.
     • Легко для HF-моделей (экспортируйте в .pth).
+
 Для Hugging Face моделей часто используют safetensors (совместим с PyTorch): Burn поддерживает загрузку через BinFileRecorder или custom код.
-2. Прямые bindings: tch-rs + libtorch
+
+**2. Прямые bindings: tch-rs + libtorch**
 Если нужна максимальная совместимость (CUDA, прямой jit-load TorchScript моделей), используйте tch-rs — Rust-bindings к C++ libtorch.
-Зависимости:
+
+**Зависимости:**
 [dependencies]
 tch = "0.15.0"  # или актуальная
-Установка libtorch: Скачайте с pytorch.org (CUDA/CPU версия) и укажите переменные окружения (LIBTORCH, LD_LIBRARY_PATH).
-Пример: Загрузка и inference TorchScript модели
-use tch::{Tensor, Device, jit::CModule, TchResult};
+**Установка libtorch:** Скачайте с pytorch.org (CUDA/CPU версия) и укажите переменные окружения (LIBTORCH, LD_LIBRARY_PATH).
+**Пример: Загрузка и inference TorchScript модели**
+
+`use tch::{Tensor, Device, jit::CModule, TchResult};
 
 fn main() -> TchResult<()> {
     // Устройство (CUDA если доступно)
@@ -94,10 +103,13 @@ fn main() -> TchResult<()> {
     println!("Output shape: {:?}", output.size());
 
     Ok(())
-}
-Преимущества: Полный доступ к PyTorch kernels (CUDA, оптимизации). Недостатки: Тяжёлая зависимость, сложная настройка.
-3. Другие варианты
-    • Candle (альтернатива Burn): Отлично загружает safetensors/GGUF от PyTorch/HF моделей (LLaMA, Whisper). Простой API, нет autodiff по умолчанию.
-    • ONNX/ Tract: Экспорт из PyTorch в ONNX, затем runtime в Rust (tract crate).
-Для большинства случаев (inference предобученных моделей) рекомендую Burn + burn-import или Candle + safetensors — чистый Rust, высокая производительность.
+}`
+**Преимущества:** Полный доступ к PyTorch kernels (CUDA, оптимизации). Недостатки: Тяжёлая зависимость, сложная настройка.
 
+**3. Другие варианты**
+
+    • **Candle** (альтернатива Burn): Отлично загружает safetensors/GGUF от PyTorch/HF моделей (LLaMA, Whisper). Простой API, нет autodiff по умолчанию.
+
+    • **ONNX/ Tract:** Экспорт из PyTorch в ONNX, затем runtime в Rust (tract crate).
+
+Для большинства случаев (inference предобученных моделей) рекомендую **Burn + burn-import или Candle + safetensors** — чистый Rust, высокая производительность.
