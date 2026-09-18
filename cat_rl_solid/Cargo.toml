@@ -1,0 +1,17 @@
+[package]
+name = "cat_rl_solid"
+version = "0.1.0"
+edition = "2021"
+description = ""
+authors = ["nicktretyakov@gmail.com"]
+
+[lib]
+name = "cat_rl_solid"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "cat_rl_solid"
+path = "src/main.rs"
+
+[dependencies]
+rand = "0.8"
