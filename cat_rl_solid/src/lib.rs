@@ -7,12 +7,6 @@
 //! - Функции активации и Layer Normalization
 //! - Простую нейросеть (Dense + Policy Network)
 //! - FFI-слой для вызова из Python / C
-//!
-//! Сборка:
-//! ```bash
-//! cargo build --release
-//! # → target/release/libcat_rl_solid.so
-//! ```
 
 use std::error::Error;
 use std::ffi::{CStr, CString};
