@@ -1,0 +1,14 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling iris-linfa v0.1.0 (/home/n/Downloads/Введение)
+warning: unused dependency `ndarray`
+  --> Cargo.toml:10:1
+   |
+10 | ndarray = "0.15"
+   | ^^^^^^^
+   |
+   = note: `cargo::unused_dependencies` is set to `warn` by default
+help: consider removing the dependency on `ndarray`
+warning: `iris-linfa` (manifest) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 2.50s
+     Running `target/release/iris-linfa`

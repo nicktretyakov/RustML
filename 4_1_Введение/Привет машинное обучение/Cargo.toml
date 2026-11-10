@@ -1,0 +1,12 @@
+[package]
+name = "iris-linfa"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+linfa = "0.8"
+linfa-datasets = { version = "0.8", features = ["iris"] }
+linfa-nn = "0.8"
+ndarray = "0.15"
+plotters = "0.3"
+rand = "0.8"

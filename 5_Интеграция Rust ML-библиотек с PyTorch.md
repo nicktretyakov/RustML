@@ -7,13 +7,18 @@
 Используйте crate burn-import для загрузки .pth файлов (стандартный формат PyTorch). Это конвертирует веса в Burn-формат (record), совместимый с любым бэкендом.
 
 **Зависимости в Cargo.toml:**
+
+```
 [dependencies]
 burn = { version = "0.13.0", features = ["ndarray"] }  # или "wgpu" для GPU
 burn-import = "0.13.0"
+```
+
 
 **Пример кода: Загрузка предобученной ResNet-18 из PyTorch**
-(Адаптировано из официального блога Burn. Скачайте resnet18-f37072fd.pth с torchvision.)
-`use burn::{
+(Адаптировано из официального блога Burn.
+```
+use burn::{
     prelude::*,
     module::Module,
     config::Config,
@@ -63,9 +68,12 @@ fn main() {
 
     // Теперь model готова к inference на выбранном бэкенде
     println!("Модель с весами PyTorch загружена: {model:?}");
-}`
+}
+
+```
 
 **Преимущества:**
+
     • Нет runtime-зависимости от PyTorch.
     • Работает на WGPU (Vulkan/Metal/DirectX) для кросс-платформенного GPU.
     • Легко для HF-моделей (экспортируйте в .pth).
@@ -76,12 +84,18 @@ fn main() {
 Если нужна максимальная совместимость (CUDA, прямой jit-load TorchScript моделей), используйте tch-rs — Rust-bindings к C++ libtorch.
 
 **Зависимости:**
+
+```
 [dependencies]
 tch = "0.15.0"  # или актуальная
+```
+
 **Установка libtorch:** Скачайте с pytorch.org (CUDA/CPU версия) и укажите переменные окружения (LIBTORCH, LD_LIBRARY_PATH).
 **Пример: Загрузка и inference TorchScript модели**
 
-`use tch::{Tensor, Device, jit::CModule, TchResult};
+
+```
+use tch::{Tensor, Device, jit::CModule, TchResult};
 
 fn main() -> TchResult<()> {
     // Устройство (CUDA если доступно)
@@ -103,8 +117,14 @@ fn main() -> TchResult<()> {
     println!("Output shape: {:?}", output.size());
 
     Ok(())
-}`
-**Преимущества:** Полный доступ к PyTorch kernels (CUDA, оптимизации). Недостатки: Тяжёлая зависимость, сложная настройка.
+}
+```
+
+**Преимущества:** 
+
+Полный доступ к PyTorch kernels (CUDA, оптимизации).
+
+Недостатки: Тяжёлая зависимость, сложная настройка.
 
 **3. Другие варианты**
 
@@ -112,4 +132,4 @@ fn main() -> TchResult<()> {
 
     • **ONNX/ Tract:** Экспорт из PyTorch в ONNX, затем runtime в Rust (tract crate).
 
-Для большинства случаев (inference предобученных моделей) рекомендую **Burn + burn-import или Candle + safetensors** — чистый Rust, высокая производительность.
+Для большинства случаев (inference предобученных моделей) рекомендую **Burn + burn-import или Candle + safetensors** —чистый Rust, высокая производительность.
