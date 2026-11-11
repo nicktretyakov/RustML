@@ -1,0 +1,12 @@
+[package]
+name = "cones_stations"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ndarray = "0.15"
+
+# при желании — для ускорения операций (BLAS/LAPACK), не обязательно:
+# ndarray = { version = "0.15", features = ["blas"] }
+# blas-src = { version = "0.8", features = ["openblas"] }
+# openblas-src = { version = "0.10", features = ["cblas", "system"] }

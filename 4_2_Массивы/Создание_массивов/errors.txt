@@ -1,0 +1,4 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+    Finished `release` profile [optimized] target(s) in 0.02s
+     Running `target/release/kayak_forecast`
