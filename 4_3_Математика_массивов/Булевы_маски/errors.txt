@@ -1,0 +1,13 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused import: `itertools::Itertools`
+ --> src/main.rs:1:5
+  |
+1 | use itertools::Itertools;
+  |     ^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `times_filter` (bin "times_filter") generated 1 warning (run `cargo fix --bin "times_filter" -p times_filter` to apply 1 suggestion)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/times_filter`

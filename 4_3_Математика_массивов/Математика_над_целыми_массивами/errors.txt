@@ -1,0 +1,14 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling peroxide-pace-calculator v0.1.0 (/mnt/samsung/curses/RustML/4_3_Математика_массивов/4_3_Математика_над_целыми_массивами)
+warning: unused `#[macro_use]` import
+ --> src/main.rs:1:1
+  |
+1 | #[macro_use]
+  | ^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `peroxide-pace-calculator` (bin "peroxide-pace-calculator") generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.28s
+     Running `target/debug/peroxide-pace-calculator`

@@ -1,0 +1,8 @@
+[package]
+name = "visits-stats"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ndarray = "0.15"
+ndarray-stats = "0.5"

@@ -1,0 +1,12 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+    Updating crates.io index
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+     Locking 3 packages to highest compatible versions
+    Updating ndarray v0.15.6 -> v0.16.1 (available: v0.17.2)
+      Adding portable-atomic v1.15.0
+      Adding portable-atomic-util v0.2.8
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling ndarray v0.16.1
+   Compiling weeks_stats v0.1.0 (/mnt/samsung/curses/RustML/4_4_Преобразование_данных/Изменение_формы_массивов)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.14s
+     Running `target/debug/weeks_stats`

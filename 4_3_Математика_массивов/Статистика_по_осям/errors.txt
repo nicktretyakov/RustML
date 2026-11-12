@@ -1,0 +1,31 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+    Updating crates.io index
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+     Locking 27 packages to highest compatible versions
+      Adding ndarray v0.15.6 (available: v0.17.2)
+      Adding ndarray-stats v0.5.1 (available: v0.7.0)
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling autocfg v1.5.1
+   Compiling libc v0.2.191
+   Compiling zerocopy v0.8.63
+   Compiling cfg-if v1.0.5
+   Compiling rawpointer v0.2.1
+   Compiling either v1.19.0
+   Compiling hashbrown v0.12.3
+   Compiling num-traits v0.2.19
+   Compiling matrixmultiply v0.3.11
+   Compiling indexmap v1.9.3
+   Compiling num-complex v0.4.6
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling num-integer v0.1.47
+   Compiling noisy_float v0.2.1
+   Compiling itertools v0.10.5
+   Compiling ndarray v0.15.6
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling ndarray-stats v0.5.1
+   Compiling visits-stats v0.1.0 (/mnt/samsung/curses/RustML/4_3_Математика_массивов/Статистика_по_осям)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.29s
+     Running `target/debug/visits-stats`

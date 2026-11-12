@@ -1,0 +1,5 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling library_stats v0.1.0 (/mnt/samsung/curses/RustML/4_3_Математика_массивов/Сводная_статистика)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.35s
+     Running `target/debug/library_stats`

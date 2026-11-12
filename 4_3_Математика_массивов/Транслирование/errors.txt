@@ -1,0 +1,16 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+    Updating crates.io index
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+     Locking 7 packages to highest compatible versions
+      Adding ndarray v0.15.6 (available: v0.17.2)
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling autocfg v1.5.1
+   Compiling rawpointer v0.2.1
+   Compiling num-traits v0.2.19
+   Compiling matrixmultiply v0.3.11
+   Compiling num-complex v0.4.6
+   Compiling num-integer v0.1.47
+   Compiling ndarray v0.15.6
+   Compiling center-example v0.1.0 (/mnt/samsung/curses/RustML/4_3_Математика_массивов/Транслирование)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 5.85s
+     Running `target/debug/center-example`
