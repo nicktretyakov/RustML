@@ -1,0 +1,40 @@
+[package]
+name = "context"
+version = "0.1.0"
+edition = "2024"
+
+
+# Зависимости
+[dependencies]
+anyhow = "1.0"                                     # Удобная обработка ошибок
+thiserror = "1.0"                                  # Производные ошибки
+serde = { version = "1.0", features = ["derive"] } # Сериализация
+bincode = "1.3"                                    # Бинарная сериализация
+tracing = "0.1"                                    # Инструментирование и логирование
+tracing-subscriber = { version = "0.3", features = ["env-filter"] } # Бэкенды для логирования
+lazy_static = "1.4"                                # Инициализация статических переменных
+libc = "0.2"                                       # Для FFI интерфейсов
+once_cell = "1.18"                                 # Альтернатива lazy_static для некоторых случаев
+ndarray = "0.15"                                   # Для работы с многомерными массивами (ML)
+rand = "0.8"                                       # Генерация случайных чисел
+cfg-if = "1.0" 
+rayon = "1.9"                                    # Условная компиляция
+
+# CUDA-специфичные зависимости (если используется)
+[target.'cfg(target_os = "linux")'.dependencies]
+cudarc = { version = "0.8", optional = true } # Безопасные Rust-биндинги для CUDA
+
+[dev-dependencies]
+tempfile = "3.8" # Для временных файлов в тестах
+rstest = "0.18"  # Расширенные возможности тестирования
+
+# Настройки сборки
+[build-dependencies]
+cc = "1.0" # Для сборки C/C++ кода
+
+[profile.release]
+lto = true        # Включение LTO для оптимизации
+codegen-units = 1 # Лучшая оптимизация
+opt-level = 3     # Агрессивная оптимизация
+
+[workspace] # Для будущего расширения на несколько крейтов

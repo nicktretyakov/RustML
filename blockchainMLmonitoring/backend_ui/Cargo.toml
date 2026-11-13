@@ -1,0 +1,44 @@
+[package]
+name = "backend_ui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Rocket 0.5 (современная версия)
+rocket = { version = "0.5.1", features = ["json"] }
+rocket_dyn_templates = { version = "0.2.0", features = ["handlebars"] }
+
+# Actix Web
+actix-web = "4.9"
+
+# Warp
+warp = "0.3.7"
+
+# Tokio (нужен для всех асинхронных частей)
+tokio = { version = "1.40", features = ["full"] }
+
+# Reqwest для HTTP-клиента
+reqwest = { version = "0.12", features = ["json"] }
+
+# Serde для (де)сериализации JSON
+serde = { version = "1.0", features = ["derive"] }
+
+# Anyhow для удобной обработки ошибок
+anyhow = "1.0"
+
+# Linfa и линейная регрессия
+linfa = "0.7.0"
+linfa-linear = "0.7.0"
+
+# Ndarray для работы с массивами
+ndarray = "0.15.6"
+
+# Futures (используется в WebSocket)
+futures = "0.3"
+rayon = "1.10"
+rand = "0.8"
+rand_distr = "0.4"
+
+
+[features]
+default = []

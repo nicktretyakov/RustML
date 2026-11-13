@@ -1,0 +1,2 @@
+{"id":4,"name":"test1","features":[1.5,2.5,3.5],"labels":["class1"],"nested":{"key4":{"value":45.0,"category":"cat1","sub_features":[0.15,0.25]}},"timestamp":"2023-01-04"}
+{"id":5,"name":"test2","features":[4.5,5.5,6.5],"labels":["class2"],"nested":{"key5":{"value":46.0,"category":"cat2","sub_features":[0.35,0.45]}},"timestamp":"2023-01-05"}

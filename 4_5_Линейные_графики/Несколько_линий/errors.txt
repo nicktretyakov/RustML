@@ -1,0 +1,5 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling game_scores v0.1.0 (/mnt/samsung/curses/RustML/4_5_Линейные_графики/Несколько_линий)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.00s
+     Running `target/debug/game_scores`

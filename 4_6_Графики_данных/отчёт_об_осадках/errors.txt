@@ -1,0 +1,9 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling rain_analysis v0.1.0 (/mnt/samsung/curses/RustML/4_6_Графики_данных/отчёт_об_осадках)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.14s
+     Running `target/debug/rain_analysis`
+
+thread 'main' (34892) panicked at src/main.rs:55:39:
+index out of bounds: the len is 7 but the index is 7
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
