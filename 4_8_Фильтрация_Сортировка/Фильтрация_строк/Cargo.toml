@@ -1,0 +1,8 @@
+ [package]
+ name = "trails"
+ version = "0.1.0"
+ edition = "2021"
+
+[dependencies]
+polars = { version = "0.40", features = ["lazy", "csv"] }
+anyhow = "1"

@@ -1,0 +1,14 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling polars-core v0.45.1
+   Compiling polars-ops v0.45.1
+   Compiling polars-time v0.45.1
+   Compiling polars-io v0.45.1
+   Compiling polars-plan v0.45.1
+   Compiling polars-expr v0.45.1
+   Compiling polars-mem-engine v0.45.1
+   Compiling polars-lazy v0.45.1
+   Compiling polars v0.45.1
+   Compiling passengers v0.1.0 (/mnt/samsung/curses/RustML/4_7_DataFrame/Series)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1m 12s
+     Running `target/debug/passengers`

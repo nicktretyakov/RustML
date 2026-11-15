@@ -1,0 +1,5 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling race-stats v0.1.0 (/mnt/samsung/curses/RustML/4_8_Фильтрация_Сортировка/Выбор_строк)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.16s
+     Running `target/debug/race-stats`

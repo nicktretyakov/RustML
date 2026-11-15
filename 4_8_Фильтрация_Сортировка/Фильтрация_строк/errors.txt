@@ -1,0 +1,5 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling trails v0.1.0 (/mnt/samsung/curses/RustML/4_8_Фильтрация_Сортировка/Фильтрация_строк)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.98s
+     Running `target/debug/trails`
