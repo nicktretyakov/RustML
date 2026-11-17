@@ -1,0 +1,8 @@
+[package]
+name = "products_analysis"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+polars = { version = "0.55.2", features = ["lazy"] }

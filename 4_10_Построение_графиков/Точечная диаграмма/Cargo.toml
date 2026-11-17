@@ -1,0 +1,18 @@
+[package]
+name = "trees-rust"
+version = "0.1.0"
+edition = "2021"
+description = "Анализ зависимости высоты деревьев от возраста/толщины ствола (Rust, SOLID, ООП, макросы, многопоточность)"
+
+[dependencies]
+# Чтение CSV и десериализация записей в структуру Tree.
+csv = "1.3"
+serde = { version = "1", features = ["derive"] }
+# Параллельная обработка деревьев (многопоточность через rayon).
+rayon = "1.10"
+# Рендеринг scatter-диаграммы в PNG.
+# default-features включают bitmap_backend + ttfengine (шрифты), добаляем серии.
+plotters = { version = "0.3", features = ["all_series", "all_elements"] }
+
+[profile.release]
+opt-level = 2

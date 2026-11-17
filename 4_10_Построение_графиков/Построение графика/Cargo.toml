@@ -1,0 +1,28 @@
+[package]
+name = "river_analysis"
+version = "0.1.0"
+edition = "2021"
+description = "Stormy-night river level analysis: CSV reading, parallel preprocessing, ML linear regression and plotting. Demonstrates crates, macros, multithreading, machine learning, OOP and SOLID in Rust."
+
+[[bin]]
+name = "river_analysis"
+path = "src/main.rs"
+
+[dependencies]
+# --- crates: data I/O (analogues of pandas.read_csv) ---
+csv       = "1.3"
+serde     = { version = "1", features = ["derive"] }
+
+# --- crate: multithreading (data-parallel preprocessing + concurrent fit/plot) ---
+rayon     = "1.12"
+
+# --- crate: machine learning (pure-Rust, no LAPACK/BLAS) ---
+smartcore = "0.7"
+
+# --- crate: plotting (matplotlib equivalent). ab_glyph embeds the TTF font
+#     so the chart renders without a system font database. ---
+plotters         = { version = "0.3", default-features = false, features = ["ab_glyph", "bitmap_backend", "line_series", "area_series"] }
+plotters-bitmap  = { version = "0.3", default-features = false, features = ["image"] }
+
+[profile.release]
+opt-level = 2

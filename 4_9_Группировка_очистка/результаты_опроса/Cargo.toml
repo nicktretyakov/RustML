@@ -1,0 +1,23 @@
+[package]
+name = "survey_report"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+authors = ["survey team"]
+description = "Clean report over a streaming-video satisfaction survey (Rust)."
+
+[dependencies]
+# CSV parsing + (de)serialization -------------------------------------------
+csv = "1.3"
+serde = { version = "1", features = ["derive"] }
+# Data-parallel aggregation --------------------------------------------------
+rayon = "1"
+# Machine learning: linear regression over device + age features ------------
+smartcore = "0.7"
+
+[[bin]]
+name = "survey_report"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 2

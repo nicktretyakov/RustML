@@ -1,0 +1,45 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+    Updating crates.io index
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+     Locking 37 packages to highest compatible versions
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+ Downloading crates ...
+  Downloaded ordered-float v5.5.1
+  Downloaded smartcore v0.7.0
+   Compiling autocfg v1.5.1
+   Compiling proc-macro2 v1.0.107
+   Compiling crossbeam-utils v0.8.23
+   Compiling crossbeam-epoch v0.9.21
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.229
+   Compiling num-traits v0.2.19
+   Compiling crossbeam-deque v0.8.8
+   Compiling rayon-core v1.13.0
+   Compiling syn v3.0.10
+   Compiling serde v1.0.229
+   Compiling num-integer v0.1.47
+   Compiling num-complex v0.4.6
+   Compiling num-bigint v0.4.8
+   Compiling num-iter v0.1.46
+   Compiling memchr v2.8.3
+   Compiling rand_core v0.10.1
+   Compiling rand v0.10.4
+   Compiling num-rational v0.4.2
+   Compiling serde_derive v1.0.229
+   Compiling csv-core v0.1.13
+   Compiling approx v0.5.1
+   Compiling ordered-float v5.5.1
+   Compiling num v0.4.3
+   Compiling either v1.19.0
+   Compiling cfg-if v1.0.5
+   Compiling itoa v1.0.19
+   Compiling ryu v1.0.23
+   Compiling rayon v1.12.0
+   Compiling csv v1.4.0
+   Compiling smartcore v0.7.0
+   Compiling survey_report v0.1.0 (/mnt/samsung/curses/RustML/4_9_Группировка_очистка/результаты_опроса)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 15.40s
+     Running `target/debug/survey_report`
+[ml] linear regression trained on 18 samples, 4 features [laptop, phone, tablet, age_ordinal]
+[ml] MSE = 1.8653, R^2 = 0.4211

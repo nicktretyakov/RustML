@@ -1,0 +1,16 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling memchr v2.8.3
+   Compiling itoa v1.0.19
+   Compiling ryu v1.0.23
+   Compiling csv-core v0.1.13
+   Compiling syn v3.0.10
+   Compiling csv v1.4.0
+   Compiling serde_derive v1.0.229
+   Compiling food_truck v0.1.0 (/mnt/samsung/curses/RustML/4_9_Группировка_очистка/Несколько_сводок)
+    Finished `release` profile [optimized] target(s) in 7.02s

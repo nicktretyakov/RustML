@@ -1,0 +1,10 @@
+[package]
+name = "rust_runs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Крейт для чтения CSV: даёт Reader с заголовком и десериализацией через serde.
+csv = "1.3"
+# Крейт serde с derive — для автоматической (де)сериализации структуры Run.
+serde = { version = "1", features = ["derive"] }

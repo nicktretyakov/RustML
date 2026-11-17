@@ -1,0 +1,5 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+     Running `target/debug/river_analysis`
+[river_analysis] using font: /mnt/samsung/curses/RustML/4_10_Построение_графиков/Построение графика/DejaVuSans.ttf

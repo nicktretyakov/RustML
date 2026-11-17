@@ -1,0 +1,20 @@
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+warning: unused config key `registry.protocol` in `/home/n/.cargo/config.toml`
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling memchr v2.8.3
+   Compiling ryu v1.0.23
+   Compiling itoa v1.0.19
+   Compiling syn v3.0.10
+   Compiling csv-core v0.1.13
+   Compiling csv v1.4.0
+   Compiling serde_derive v1.0.229
+   Compiling bike_profile v0.1.0 (/mnt/samsung/curses/RustML/4_9_Группировка_очистка/Подсчёт_значений)
+warning: could not load dep-graph from `/mnt/samsung/curses/RustML/4_9_Группировка_очистка/Подсчёт_значений/target/debug/incremental/bike_profile-3c4lzxz78nf1v/s-ho7mbimh7r-0pkrw5g-cc3gtfc7hoxqude7d7rdtmvpg/dep-graph.bin`: memory map must have a non-zero length
+
+warning: `bike_profile` (bin "bike_profile") generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.03s
+     Running `target/debug/bike_profile`
