@@ -1,0 +1,3 @@
+   Compiling commute_analyzer v0.1.0 (/mnt/samsung/curses/RustML/4_10_Построение_графиков/Гистограмма_столбца)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.73s
+     Running `target/debug/commute_analyzer`

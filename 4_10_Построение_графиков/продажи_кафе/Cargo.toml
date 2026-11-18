@@ -1,0 +1,23 @@
+[package]
+name = "cafe_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+csv = "1.3"
+serde = { version = "1", features = ["derive"] }
+rayon = "1"
+# plotters with ab_glyph (self-contained font rendering, no fontconfig)
+plotters = { version = "0.3", default-features = false, features = [
+    "bitmap_backend",
+    "bitmap_encoder",
+    "all_series",
+    "all_elements",
+    "full_palette",
+    "ab_glyph",
+] }
+anyhow = "1"
+
+# Fast dev builds; this program does no heavy compute.
+[profile.dev]
+opt-level = 0

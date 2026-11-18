@@ -1,0 +1,15 @@
+[package]
+name = "commute_analyzer"
+version = "0.1.0"
+edition = "2021"
+authors = ["commute-survey"]
+
+[dependencies]
+# External crates: CSV parsing, (de)serialization, data-parallelism, plotting.
+csv = "1.3"
+serde = { version = "1", features = ["derive"] }
+rayon = "1.10"
+plotters = "0.3"
+
+[profile.release]
+opt-level = 2
