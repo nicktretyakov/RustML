@@ -1,0 +1,5 @@
+   Compiling breast_cancer_app v0.1.0 (/mnt/samsung/curses/RustML/4_11_Наборы_данных/Встроенные_наборы)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.53s
+     Running `target/debug/breast_cancer_app`
+(источник данных: cwd file breast_cancer.csv)
+Error: Индекс 343 вне диапазона (0..30). Введите число от 0 до 29.

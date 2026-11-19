@@ -1,0 +1,64 @@
+    Updating crates.io index
+     Locking 56 packages to highest compatible versions
+      Adding ndarray v0.16.1 (available: v0.17.2)
+      Adding rand v0.8.8 (available: v0.10.4)
+ Downloading crates ...
+  Downloaded clap_lex v1.1.2
+  Downloaded clap_derive v4.6.8
+  Downloaded clap v4.6.8
+   Compiling autocfg v1.5.1
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling libc v0.2.191
+   Compiling crossbeam-utils v0.8.23
+   Compiling zerocopy v0.8.63
+   Compiling num-traits v0.2.19
+   Compiling crossbeam-epoch v0.9.21
+   Compiling serde_core v1.0.229
+   Compiling syn v3.0.10
+   Compiling crossbeam-deque v0.8.8
+   Compiling cfg-if v1.0.5
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v1.0.0
+   Compiling getrandom v0.2.17
+   Compiling matrixmultiply v0.3.11
+   Compiling rayon-core v1.13.0
+   Compiling colorchoice v1.0.5
+   Compiling anstyle v1.0.14
+   Compiling anstyle-query v1.1.5
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstream v1.0.0
+   Compiling rand_core v0.6.4
+   Compiling memchr v2.8.3
+   Compiling strsim v0.11.1
+   Compiling anyhow v1.0.104
+   Compiling rawpointer v0.2.1
+   Compiling clap_lex v1.1.2
+   Compiling serde v1.0.229
+   Compiling heck v0.5.0
+   Compiling clap_builder v4.6.7
+   Compiling serde_derive v1.0.229
+   Compiling clap_derive v4.6.8
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling csv-core v0.1.13
+   Compiling num-complex v0.4.6
+   Compiling num-integer v0.1.47
+   Compiling ryu v1.0.23
+   Compiling either v1.19.0
+   Compiling itoa v1.0.19
+   Compiling rayon v1.12.0
+   Compiling csv v1.4.0
+   Compiling ndarray v0.16.1
+   Compiling clap v4.6.8
+   Compiling rand v0.8.8
+   Compiling digits_ml v0.1.0 (/mnt/samsung/curses/RustML/4_11_Наборы_данных/Признаки_метки)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 21.36s
+     Running `target/debug/digits_ml`
+error: the following required arguments were not provided:
+  --digit <DIGIT>
+
+Usage: digits_ml --digit <DIGIT>
+
+For more information, try '--help'.

@@ -1,0 +1,21 @@
+[package]
+name = "breast_cancer_app"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+
+[dependencies]
+# CSV parsing
+csv = "1.3"
+serde = { version = "1", features = ["derive"] }
+# ML crates (linfa ecosystem)
+linfa = "0.7"
+linfa-datasets = "0.7"
+ndarray = "0.15"
+# Concurrency
+rayon = "1.10"
+# Error handling
+anyhow = "1"
+
+[profile.release]
+opt-level = 3

@@ -1,0 +1,21 @@
+[package]
+name = "breast_cancer_scatter"
+version = "0.1.0"
+edition = "2021"
+authors = ["Z User"]
+description = "Breast-cancer scatter (malignant vs benign) in Rust: multithreading + OOP traits + ML crates + macros + SOLID"
+
+[dependencies]
+# ML: foundational Rust tensor library (linfa / smartcore build on ndarray).
+ndarray = "0.16"
+# Visualization: bitmap scatter plot.
+plotters = { version = "0.3", features = ["ab_glyph"] }
+# Multithreading: data-parallel iterators.
+rayon = "1"
+# CSV parsing of the scikit-learn dataset file.
+csv = "1"
+# HTTP fallback: download the dataset from scikit-learn if `data/` is missing.
+ureq = { version = "2", default-features = false, features = ["tls"] }
+
+[profile.release]
+opt-level = 2

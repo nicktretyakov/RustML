@@ -1,0 +1,24 @@
+[package]
+name = "digits_ml"
+version = "0.1.0"
+edition = "2021"
+authors = ["z.ai agent"]
+
+[dependencies]
+# Чтение CSV-датасета
+csv = "1.3"
+# Матричные вычисления / тензоры для ML
+ndarray = "0.16"
+# Многопоточность: параллельные вычисления над срезами данных
+rayon = "1.10"
+# Десериализация строк CSV
+serde = { version = "1", features = ["derive"] }
+# Разделение train/test и перемешивание
+rand = "0.8"
+# Удобная обработка ошибок
+anyhow = "1"
+# Парсинг аргументов командной строки (программа считывает цифру d)
+clap = { version = "4.5", features = ["derive"] }
+
+[profile.release]
+opt-level = 3

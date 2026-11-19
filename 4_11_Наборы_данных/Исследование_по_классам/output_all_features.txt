@@ -1,0 +1,31 @@
+mean radius: malignant is 1.44 times benign
+mean texture: malignant is 1.21 times benign
+mean perimeter: malignant is 1.48 times benign
+mean area: malignant is 2.11 times benign
+mean smoothness: malignant is 1.11 times benign
+mean compactness: malignant is 1.81 times benign
+mean concavity: malignant is 3.49 times benign
+mean concave points: malignant is 3.42 times benign
+mean symmetry: malignant is 1.11 times benign
+mean fractal dimension: malignant is 1 times benign
+radius error: malignant is 2.14 times benign
+texture error: malignant is 0.99 times benign
+perimeter error: malignant is 2.16 times benign
+area error: malignant is 3.44 times benign
+smoothness error: malignant is 0.94 times benign
+compactness error: malignant is 1.51 times benign
+concavity error: malignant is 1.61 times benign
+concave points error: malignant is 1.53 times benign
+symmetry error: malignant is 0.99 times benign
+fractal dimension error: malignant is 1.12 times benign
+worst radius: malignant is 1.58 times benign
+worst texture: malignant is 1.25 times benign
+worst perimeter: malignant is 1.62 times benign
+worst area: malignant is 2.54 times benign
+worst smoothness: malignant is 1.16 times benign
+worst compactness: malignant is 2.05 times benign
+worst concavity: malignant is 2.71 times benign
+worst concave points: malignant is 2.45 times benign
+worst symmetry: malignant is 1.2 times benign
+worst fractal dimension: malignant is 1.15 times benign
+Best separator: mean concavity

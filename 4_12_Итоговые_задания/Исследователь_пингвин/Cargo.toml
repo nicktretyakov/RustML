@@ -1,0 +1,25 @@
+[package]
+name = "penguins_rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["ZCode"]
+
+[dependencies]
+# Serialization / CSV reading (ООП + SOLID data layer)
+csv = "1.3"
+serde = { version = "1", features = ["derive"] }
+
+# Error handling (SOLID: errors as first-class values)
+anyhow = "1"
+
+# Многопоточность (rayon — data parallelism)
+rayon = "1"
+
+# Машинное обучение (KNN classifier from smartcore)
+smartcore = { version = "0.3", features = ["serde"] }
+
+# Drawing histograms (plotters — pure-Rust backend, no system GUI)
+plotters = "0.3"
+
+[profile.release]
+opt-level = 2

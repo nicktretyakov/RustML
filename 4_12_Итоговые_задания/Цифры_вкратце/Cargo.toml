@@ -1,0 +1,19 @@
+[package]
+name = "digits_rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Z User"]
+
+[dependencies]
+# PyO3 bridges Rust and the CPython interpreter that ships scikit-learn /
+# numpy / matplotlib, giving us a real machine-learning data source.
+pyo3 = { version = "0.30", features = ["auto-initialize"] }
+# rayon: data-parallelism crate; the per-pixel mean reduction is parallelised.
+rayon = "1.12"
+
+[[bin]]
+name = "digits_rust"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 2

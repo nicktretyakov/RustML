@@ -1,0 +1,3 @@
+   Compiling digits_rust v0.1.0 (/mnt/samsung/curses/RustML/4_12_Итоговые_задания/Цифры_вкратце)
+    Finished `release` profile [optimized] target(s) in 0.92s
+     Running `target/release/digits_rust`

@@ -1,0 +1,32 @@
+warning: method `feature_col_index` is never used
+   --> src/dataset.rs:113:8
+    |
+ 42 | impl WineDataset {
+    | ---------------- method in this implementation
+...
+113 |     fn feature_col_index(&self, feature: &str) -> Option<usize> {
+    |        ^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: methods `class_labels`, `all_feature_values`, `class_feature_values`, and `class_count` are never used
+  --> src/traits.rs:27:8
+   |
+22 | pub trait FeatureSource {
+   |           ------------- methods in this trait
+...
+27 |     fn class_labels(&self) -> Vec<usize>;
+   |        ^^^^^^^^^^^^
+...
+30 |     fn all_feature_values(&self, feature: &str) -> Option<Vec<f64>>;
+   |        ^^^^^^^^^^^^^^^^^^
+...
+33 |     fn class_feature_values(&self, class: usize, feature: &str) -> Option<Vec<f64>>;
+   |        ^^^^^^^^^^^^^^^^^^^^
+...
+36 |     fn class_count(&self, class: usize) -> usize {
+   |        ^^^^^^^^^^^
+
+warning: `wine-rs` (bin "wine-rs") generated 2 warnings
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
+     Running `target/debug/wine-rs`

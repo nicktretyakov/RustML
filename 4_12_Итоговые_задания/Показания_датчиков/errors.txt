@@ -1,0 +1,4 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target/debug/server_room`
+[ML] OLSRegression(slope=0.2049, intercept=19.1846, R^2=0.1147)
+[ML] Predicted temperature at hour 24: 24.1
