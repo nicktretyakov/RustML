@@ -1,0 +1,38 @@
+    Updating crates.io index
+     Locking 36 packages to highest compatible versions
+      Adding ndarray v0.16.1 (available: v0.17.2)
+      Adding statrs v0.18.0 (available: v0.19.1)
+ Downloading crates ...
+  Downloaded simba v0.9.1
+  Downloaded statrs v0.18.0
+  Downloaded nalgebra v0.33.3
+   Compiling autocfg v1.5.1
+   Compiling libm v0.2.16
+   Compiling libc v0.2.191
+   Compiling zerocopy v0.8.63
+   Compiling cfg-if v1.0.5
+   Compiling num-traits v0.2.19
+   Compiling matrixmultiply v0.3.11
+   Compiling paste v1.0.15
+   Compiling bytemuck v1.25.2
+   Compiling safe_arch v0.7.4
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling rawpointer v0.2.1
+   Compiling num-complex v0.4.6
+   Compiling num-integer v0.1.47
+   Compiling approx v0.5.1
+   Compiling wide v0.7.33
+   Compiling num-rational v0.4.2
+   Compiling typenum v1.20.1
+   Compiling ndarray v0.16.1
+   Compiling simba v0.9.1
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling rand_distr v0.4.3
+   Compiling nalgebra v0.33.3
+   Compiling statrs v0.18.0
+   Compiling water_quartiles v0.1.0 (/mnt/samsung/curses/RustML/4_13_Центр_разброс/Процентили_квартили)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 19.51s
+     Running `target/debug/water_quartiles`

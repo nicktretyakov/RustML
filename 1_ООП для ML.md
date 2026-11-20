@@ -22,7 +22,8 @@ Trait в Rust — это способ описать, какие методы и
 
 trait Языковая\_модель {
 
-`fn говорить(&self);
+```
+fn говорить(&self);
 
 }
 
@@ -30,13 +31,15 @@ struct Пользователь
 
 impl Языковая\_модель for Пользователь {
 
-`    `fn говорить(&self) {
+fn говорить(&self) {
 
-`        `println!("Запись!");
+println!("Запись!");
 
-`    `}
+}
 
-}`
+}
+
+```
 
 Здесь *Пользователь* реализует trait *Языковая\_*модель и теперь может "говорить".
 
@@ -54,15 +57,21 @@ Generic позволяют писать код, который работает 
 
 **Пример:** Функция, которая работает с любым типом, реализующим Backend:
 
-```fn train\_model<B: Backend>(model: Model<B>, data: Tensor<B>) {
 
-`    `// Обучение модели
 
-}```
+```
+fn train\_model<B: Backend>(model: Model<B>, data: Tensor<B>) {
+
+// Обучение модели
+
+}
+```
+
 
 Здесь B — это обобщённый тип, который может быть и CpuBackend, и GpuBackend Вы можете вызвать эту функцию с разными бэкендами, не меняя код:
 
-`let cpu\_model: Model<CpuBackend> = ...;
+```
+let cpu\_model: Model<CpuBackend> = ...;
 
 let gpu\_model: Model<GpuBackend> = ...;
 
@@ -70,56 +79,66 @@ train\_model(cpu\_model, cpu\_data);
 
 train\_model(gpu\_model, gpu\_data);`
 
+```
+
 #### **1. Определение trait Backend (упрощённо из документации Burn)**
-`use burn::tensor::backend::{DeviceOps, Element, TensorMetadata, QTensorPrimitive};`
+```
+use burn::tensor::backend::{DeviceOps, Element, TensorMetadata, QTensorPrimitive};`
 
-`pub trait Backend:
+pub trait Backend:
 
-`    `Sized
+Sized
 
-`    `+ Clone + Default + Send + Sync + Debug + 'static
++ Clone + Default + Send + Sync + Debug + 'static
 
 {
 
-`    `type Device: DeviceOps;
+type Device: DeviceOps;
 
-`    `type FloatTensorPrimitive: TensorMetadata + 'static;
+type FloatTensorPrimitive: TensorMetadata + 'static;
 
-`    `type FloatElem: Element;
+type FloatElem: Element;
 
-`    `type IntTensorPrimitive: TensorMetadata + 'static;
+type IntTensorPrimitive: TensorMetadata + 'static;
 
-`    `type IntElem: Element;
+type IntElem: Element;
 
-`    `type BoolTensorPrimitive: TensorMetadata + 'static;
+type BoolTensorPrimitive: TensorMetadata + 'static;
 
-`    `type BoolElem: Element;
+type BoolElem: Element;
 
-`    `type QuantizedTensorPrimitive: TensorMetadata + QTensorPrimitive + 'static;
+type QuantizedTensorPrimitive: TensorMetadata + QTensorPrimitive + 'static;
 
-`    `fn name(device: &Self::Device) -> String;
+fn name(device: &Self::Device) -> String;
 
-`    `fn seed(device: &Self::Device, seed: u64);
+fn seed(device: &Self::Device, seed: u64);
 
-`    `// Дополнительные provided методы (ad\_enabled, sync и т.д.)
+// Дополнительные provided методы (ad\_enabled, sync и т.д.)
 
-`    `fn ad\_enabled() -> bool { false }
+fn ad\_enabled() -> bool { false }
 
-`    `fn sync(\_device: &Self::Device) {}
+fn sync(\_device: &Self::Device) {}
 
-}`
+}
 
-Trait наследует множество других ops-traits (FloatTensorOps<Self>, IntTensorOps<Self> и т.д.), где реализованы конкретные операции (matmul, conv и пр.).
+```
+
+*Trait наследует множество других ops-traits (FloatTensorOps<Self>, IntTensorOps<Self> и т.д.), где реализованы конкретные операции (matmul, conv и пр.).
 
 Реальные бэкенды (NdArray, Wgpu, LibTorch) реализуют этот trait.
 
 **Пример:** Представьте, что у вас есть трейт Плавать:
+*
 
-`trait Плавать {
+```
+trait Плавать {
 
-`    `fn плыть(&self);
+fn плыть(&self);
 
-}`
+}
+```
+
+
 
 Любой тип, который хочет "уметь плавать", должен реализовать метод плыть. Например, Утка и Рыба могут реализовать этот трейт по-своему. Один трейт может "наследовать" другие трейты, то есть включать в себя их методы. Это значит, что если тип реализует "родительский" трейт, он автоматически должен реализовать и все "дочерние" трейты.
 
@@ -148,15 +167,17 @@ Trait наследует множество других ops-traits (FloatTensor
 #### **2. Определение модели generic над Backend**
 Модели определяются как generic-структуры. Это позволяет одной модели работать на любом бэкенде.
 
-`use burn::{
 
-`    `module::Module,
+```
+use burn::{
 
-`    `nn::{Linear, LinearConfig, Relu},
+module::Module,
 
-`    `prelude::\*,
+nn::{Linear, LinearConfig, Relu},
 
-`    `tensor::Tensor,
+prelude::\*,
+
+tensor::Tensor,
 
 };
 
@@ -164,43 +185,46 @@ Trait наследует множество других ops-traits (FloatTensor
 
 pub struct SimpleModel<B: Backend> {
 
-`    `linear1: Linear<B>,
+linear1: Linear<B>,
 
-`    `linear2: Linear<B>,
+linear2: Linear<B>,
 
-`    `activation: Relu,
+activation: Relu,
 
 }
 
 impl<B: Backend> SimpleModel<B> {
 
-`    `pub fn forward(&self, x: Tensor<B, 2>) -> Tensor<B, 2> {
+pub fn forward(&self, x: Tensor<B, 2>) -> Tensor<B, 2> {
 
-`        `let x = self.linear1.forward(x);
+let x = self.linear1.forward(x);
 
-`        `let x = self.activation.forward(x);
+let x = self.activation.forward(x);
 
-`        `self.linear2.forward(x)
+self.linear2.forward(x)
 
-`    `}
+}
 
-}`
+}
+```
+
 
 Более сложный пример (CNN из документации Burn):
 
-`use burn::{
+```
+use burn::{
 
-`    `nn::{
+nn::{
 
-`        `conv::{Conv2d, Conv2dConfig},
+conv::{Conv2d, Conv2dConfig},
 
-`        `pool::{AdaptiveAvgPool2d, AdaptiveAvgPool2dConfig},
+pool::{AdaptiveAvgPool2d, AdaptiveAvgPool2dConfig},
 
-`        `Dropout, DropoutConfig, Linear, LinearConfig, Relu,
+Dropout, DropoutConfig, Linear, LinearConfig, Relu,
 
-`    `},
+},
 
-`    `prelude::\*,
+prelude::\*,
 
 };
 
@@ -208,136 +232,146 @@ impl<B: Backend> SimpleModel<B> {
 
 pub struct Model<B: Backend> {
 
-`    `conv1: Conv2d<B>,
+conv1: Conv2d<B>,
 
-`    `conv2: Conv2d<B>,
+conv2: Conv2d<B>,
 
-`    `pool: AdaptiveAvgPool2d,
+pool: AdaptiveAvgPool2d,
 
-`    `dropout: Dropout,
+dropout: Dropout,
 
-`    `linear1: Linear<B>,
+linear1: Linear<B>,
 
-`    `linear2: Linear<B>,
+linear2: Linear<B>,
 
-`    `activation: Relu,
+activation: Relu,
 
 }
 
 impl<B: Backend> Model<B> {
 
-`    `pub fn forward(&self, images: Tensor<B, 3>) -> Tensor<B, 2> {
+pub fn forward(&self, images: Tensor<B, 3>) -> Tensor<B, 2> {
 
-`        `let [batch\_size, height, width] = images.dims();
+let [batch\_size, height, width] = images.dims();
 
-`        `let x = images.reshape([batch\_size, 1, height, width]);
+let x = images.reshape([batch\_size, 1, height, width]);
 
-`        `let x = self.conv1.forward(x);
+let x = self.conv1.forward(x);
 
-`        `let x = self.dropout.forward(x);
+let x = self.dropout.forward(x);
 
-`        `let x = self.conv2.forward(x);
+let x = self.conv2.forward(x);
 
-`        `let x = self.activation.forward(x);
+let x = self.activation.forward(x);
 
-`        `let x = self.pool.forward(x);
+let x = self.pool.forward(x);
 
-`        `let x = x.reshape([batch\_size, 16 \* 8 \* 8]);
+let x = x.reshape([batch\_size, 16 \* 8 \* 8]);
 
-`        `let x = self.linear1.forward(x);
+let x = self.linear1.forward(x);
 
-`        `let x = self.dropout.forward(x);
+let x = self.dropout.forward(x);
 
-`        `let x = self.activation.forward(x);
+let x = self.activation.forward(x);
 
-`        `self.linear2.forward(x)
+self.linear2.forward(x)
 
-`    `}
+}
 
-}`
+}
+
+```
 
 #### **3. Конфигурация модели и инициализация**
 Используется Config для удобной инициализации:
 
-`use burn::config::Config;
+
+```
+use burn::config::Config;
 
 #[derive(Config, Debug)]
 
 pub struct ModelConfig {
 
-`    `num\_classes: usize,
+num\_classes: usize,
 
-`    `hidden\_size: usize,
+hidden\_size: usize,
 
-`    `#[config(default = 0.5)]
+#[config(default = 0.5)]
 
-`    `dropout: f64,
+dropout: f64,
 
 }
 
 impl ModelConfig {
 
-`    `pub fn init<B: Backend>(&self, device: &B::Device) -> Model<B> {
+pub fn init<B: Backend>(&self, device: &B::Device) -> Model<B> {
 
-`        `Model {
+Model {
 
-`            `conv1: Conv2dConfig::new([1, 8], [3, 3]).init(device),
+conv1: Conv2dConfig::new([1, 8], [3, 3]).init(device),
 
-`            `conv2: Conv2dConfig::new([8, 16], [3, 3]).init(device),
+conv2: Conv2dConfig::new([8, 16], [3, 3]).init(device),
 
-`            `pool: AdaptiveAvgPool2dConfig::new([8, 8]).init(),
+pool: AdaptiveAvgPool2dConfig::new([8, 8]).init(),
 
-`            `activation: Relu::new(),
+activation: Relu::new(),
 
-`            `linear1: LinearConfig::new(16 \* 8 \* 8, self.hidden\_size).init(device),
+linear1: LinearConfig::new(16 \* 8 \* 8, self.hidden\_size).init(device),
 
-`            `linear2: LinearConfig::new(self.hidden\_size, self.num\_classes).init(device),
+linear2: LinearConfig::new(self.hidden\_size, self.num\_classes).init(device),
 
-`            `dropout: DropoutConfig::new(self.dropout).init(),
+dropout: DropoutConfig::new(self.dropout).init(),
 
-`        `}
+}
 
-`    `}
+}
 
-}`
+}
+```
+
 
 #### **4. Выбор и использование конкретного бэкенда (в main)**
+
+```
 use burn::backend::{Autodiff, NdArray, Wgpu};  // Импорт бэкендов
 
-`fn main() {
+fn main() {
 
-`    `// Пример 1: CPU (NdArray)
+// Пример 1: CPU (NdArray)
 
-`    `type MyBackend = NdArray;
+type MyBackend = NdArray;
 
-`    `// Пример 2: GPU (Wgpu, с f32 и i32)
+// Пример 2: GPU (Wgpu, с f32 и i32)
 
-`    `// type MyBackend = Wgpu<f32, i32>;
+// type MyBackend = Wgpu<f32, i32>;
 
-`    `// Пример 3: С autodiff (для обучения)
+// Пример 3: С autodiff (для обучения)
 
-`    `// type MyBackend = Autodiff<NdArray>;
+// type MyBackend = Autodiff<NdArray>;
 
-`    `// Пример 4: С fusion (для ускорения на GPU)
+// Пример 4: С fusion (для ускорения на GPU)
 
-`    `// type MyBackend = Autodiff<burn::backend::Fusion<Wgpu>>;
+// type MyBackend = Autodiff<burn::backend::Fusion<Wgpu>>;
 
-`    `let device = <MyBackend as Backend>::Device::default();  // Или конкретное устройство
+let device = <MyBackend as Backend>::Device::default();  // Или конкретное устройство
 
-`    `let config = ModelConfig::new(10, 512);
+let config = ModelConfig::new(10, 512);
 
-`    `let model = config.init::<MyBackend>(&device);
+let model = config.init::<MyBackend>(&device);
 
-`    `// Теперь model работает на выбранном бэкенде
+// Теперь model работает на выбранном бэкенде
 
-`    `println!("{model:?}");
+println!("{model:?}");
 
-}`
+}
+```
+
 
 #### **5. Декораторы бэкендов (композиция)**
 Burn позволяет "оборачивать" бэкенды для добавления функциональности:
 
-```use burn::backend::{Autodiff, Fusion, Wgpu};
+use burn::backend::{Autodiff, Fusion, Wgpu};
 
 // Автодифференцирование + fusion на GPU
 
@@ -345,7 +379,7 @@ type TrainingBackend = Autodiff<Fusion<Wgpu<f32, i32>>>;
 
 // Только inference на CPU
 
-type InferenceBackend = NdArray<f32>;```
+type InferenceBackend = NdArray<f32>;
 
 Это ключевой плюс Burn: один код — множество комбинаций (CPU/GPU, с/без autodiff, с fusion и т.д.).
 
@@ -366,33 +400,36 @@ Traits могут "наследовать" друг друга через мех
 ### **Основные способы использования "наследования" (через traits и supertraits) в интеграции Rust с ML**
 1. **Иерархии трейтов для моделей и алгоритмов** (supertraits для "наследования" поведения) Определяют базовые трейты (например, Model или Algorithm), а производные трейты наследуют их требования. Пример: в библиотеке **linfa** (аналог scikit-learn) есть трейты вроде Fit, Predict, Transformer. Более специализированные алгоритмы (например, для кластеризации) "наследуют" базовые через supertraits, чтобы гарантировать наличие методов обучения и предсказания. Это позволяет строить иерархии без дублирования кода, аналогично OOP-наследованию.
 
-   `**trait Predict<X, Y> {**
+  ```
+ trait Predict<X, Y> {
 
-   **fn predict(&self, input: X) -> Y;**
+   fn predict(&self, input: X) -> Y;
 
-   **}**
+   }
 
-   **trait Fit<X, Y>: Predict<X, Y> { // требует Predict**
+   trait Fit<X, Y>: Predict<X, Y> { // требует Predict
 
-   **fn fit(&mut self, data: X, targets: Y);**
+   fn fit(&mut self, data: X, targets: Y);
 
-   **}**
+   }
 
-   **// Пример модели (в духе linfa)**
+   // Пример модели (в духе linfa)
 
-   **struct LogisticRegression;**
+   struct LogisticRegression;
 
-   **impl Predict<Vec<f64>, f64> for LogisticRegression {**
+   impl Predict<Vec<f64>, f64> for LogisticRegression {
 
-   **fn predict(&self, input: Vec<f64>) -> f64 { /\* ... \*/ }**
+   fn predict(&self, input: Vec<f64>) -> f64 { /\* ... \*/ }
 
-   **}**
+   }
 
-   **impl Fit<Vec<Vec<f64>>, Vec<f64>> for LogisticRegression {**
+   impl Fit<Vec<Vec<f64>>, Vec<f64>> for LogisticRegression {
 
-   **fn fit(&mut self, data: Vec<Vec<f64>>, targets: Vec<f64>) { /\* ... \*/ }**
+   fn fit(&mut self, data: Vec<Vec<f64>>, targets: Vec<f64>) { /\  \/ }
 
-   **}**`
+  }
+
+```
 
    Базовый трейт требует реализации, производный "наследует" его. Вы можете "прикрепить" трейты к своим структурам, реализовав для них требуемые методы.
 
@@ -402,74 +439,86 @@ Traits могут "наследовать" друг друга через мех
 **Trait object** — это способ работать с разными типами, которые реализуют один и тот же трейт, как с одним типом. Для этого используется ключевое слово dyn (от "dynamic" — динамический). 
 В Rust нельзя создать вектор или другой контейнер, который хранит разные типы напрямую. Но можно хранить указатели на трейт-объекты, обёрнутые в Box (умный указатель, который выделяет память в куче). 
 
-   `**let net: Vec<Box<dyn Layer>> = vec![**
+   
+```
+let net: Vec<Box<dyn Layer>> = vec![
 
-   **Box::new(Linear::new()),**
+   Box::new(Linear::new()),
 
-   **Box::new(ReLU),**
+   Box::new(ReLU),
 
-   **];**`
+   ];
+```
+
 
    Здесь в одном векторе хранятся и Linear, и ReLU, потому что оба реализуют трейт Layer.
 
    Пример: в кастомных реализациях нейронных сетей (или в старых библиотеках вроде rusty-machine) определяют трейт Layer с методами forward и backward. 
 Разные слои (Linear, ReLU, Conv) реализуют его. Сеть собирается как Vec<Box<dyn Layer>>, что имитирует наследование от базового класса Layer в OOP. Полезно для динамических архитектур (например, в inference-движках).
 
-   `**use tch::{Tensor, nn};**
+   
+```
+use tch::{Tensor, nn};
 
-   **trait Layer {**
+   trait Layer {
 
-   **fn forward(&self, xs: &Tensor) -> Tensor;**
+   fn forward(&self, xs: &Tensor) -> Tensor;
 
-   **}**
+   }
 
-   **struct Linear { vs: nn::VarStore } // упрощённо**
+   struct Linear { vs: nn::VarStore } // упрощённо
 
-   **struct ReLU;**
+   struct ReLU;
 
-   **impl Layer for Linear {**
+   impl Layer for Linear {
 
-   **fn forward(&self, xs: &Tensor) -> Tensor {**
+   fn forward(&self, xs: &Tensor) -> Tensor {
 
-   **xs.linear(&self.weight, None) // пример из tch-rs**
+   xs.linear(&self.weight, None) // пример из tch-rs
 
-   **}**
+   }
 
-   **}**
+   }
 
-   **impl Layer for ReLU {**
+   impl Layer for ReLU {
 
-   **fn forward(&self, xs: &Tensor) -> Tensor {**
+   fn forward(&self, xs: &Tensor) -> Tensor {
 
-   **xs.relu()**
+   xs.relu()
 
-   **}**
+   }
 
-   **}**
+   }
 
-   **// Сеть как вектор слоёв**
+   // Сеть как вектор слоёв
 
-   **let net: Vec<Box<dyn Layer>> = vec![**
+   let net: Vec<Box<dyn Layer>> = vec![
 
-   **Box::new(Linear::new()),**
+   Box::new(Linear::new()),
 
-   **Box::new(ReLU),**
+   Box::new(ReLU),
 
-   **];**`
+   ];
+```
+
 
    Храним разные типы в одном контейнере. 
 
    В нейронных сетях часто используются разные типы слоёв (линейные, активации, свёртки и т.д.). С помощью трейт-объектов можно собрать сеть из разных слоёв в одном контейнере и последовательно применять их к данным.
 
-   `**let input = Tensor::randn(&[10], ());**
+   
+```
+let input = Tensor::randn(&[10], ());
 
-   **let mut output = input;**
+   let mut output = input;
 
-   **for layer in net {**
+   for layer in net {
 
-   **output = layer.forward(&output);**
+   output = layer.forward(&output);
 
-   **}**`
+   }
+```
+
 
    Здесь входной тензор проходит через все слои сети по очереди.
 
@@ -480,39 +529,46 @@ Traits с supertraits ограничивают дженерики, чтобы к
  В ML это критично для оптимизации под CPU/GPU. 
 Аналог: "наследование" поведения операций от базовых математических трейтов.
 
-   `**fn train<M, D, T>(mut model: M, data: D, targets: T)**
+   ```
+fn train<M, D, T>(mut model: M, data: D, targets: T)
 
-   **where**
+   where
 
-   **M: Fit<D, T> + Predict<D, T>, // "наследует" оба**
+   M: Fit<D, T> + Predict<D, T>, // "наследует" оба
 
-   **{**
+   {
 
-   [**model.fit**](http://model.fit/)**(data, targets);**
+   [model.fit**](http://model.fit/)**(data, targets);
 
-   **let pred = model.predict(data);**
+   let pred = model.predict(data);
 
-   **}**`
+   }
+
+```
 
    Здесь M — это любой тип, который реализует трейты Fit и Predict. Функция train работает с любыми моделями, которые умеют обучаться (fit) и предсказывать (predict), независимо от конкретного типа данных. Код работает с любыми типами, реализующими нужные трейты.
 
    *Generic bounds*** это способ сказать компилятору: "Этот код работает не с любыми типами, а только с теми, которые удовлетворяют определённым условиям".
 
-   `**fn print\_number<T: std::fmt::Display>(num: T) {**
+  
+```
+ fn print\_number<T: std::fmt::Display>(num: T) {
 
-   **println!("{}", num);**
+   println!("{}", num);
 
-   **}**`
+   }
+```
+
 
    Здесь T: std::fmt::Display означает, что функция print\_number работает только с типами, которые можно вывести на экран (например, i32, f64, String).
 
    *Trait inheritance*** позволяет создавать "супертрейты", которые объединяют несколько трейтов.
 
-   **trait Float: std::ops::Add + std::ops::Mul {}**
+   trait Float: std::ops::Add + std::ops::Mul {}
 
    *Super traits* позволяют группировать требования к типам.
 
-   **trait Numeric: std::ops::Add + std::ops::Sub + std::ops::Mul + std::ops::Div {}**
+   trait Numeric: std::ops::Add + std::ops::Sub + std::ops::Mul + std::ops::Div {}
 
    Типы, реализующие Numeric, должны поддерживать сложение, вычитание, умножение и деление.
 
@@ -520,35 +576,43 @@ Traits с supertraits ограничивают дженерики, чтобы к
 
    В библиотеках для работы с тензорами (например, tch-rs — обёртка над PyTorch) часто используют трейты вроде Float или Numeric, чтобы код работал с разными числовыми типами (f16, f32, f64). Это важно для оптимизации под разные процессоры (CPU/GPU).
 
-   **fn dot\_product<T: Numeric>(a: &[T], b: &[T]) -> T {**
+   
+```
+fn dot\_product<T: Numeric>(a: &[T], b: &[T]) -> T {
 
-   **a.iter().zip(b.iter()).map(|(x, y)| \*x \* \*y).sum()**
+   a.iter().zip(b.iter()).map(|(x, y)| \*x \* \*y).sum()
 
-   **}**
+   }
+```
+
 
    Эта функция работает с любыми числовыми типами, которые поддерживают умножение и суммирование.
 
 1. **Композиция с трейтами вместо наследования** (composition over inheritance) Встраивают одну структуру в другую и делегируют поведение через трейты. Пример: в Rust-ML библиотеках (linfa, smartcore) модель может содержать поля вроде preprocessor: Box<dyn Transformer>, где Transformer — трейт. Это заменяет наследование базового класса препроцессинга, делая код более гибким и безопасным.
 
-   `**struct Pipeline {**
+   
+```
+struct Pipeline {
 
-   **transformer: Box<dyn Transformer>,**
+   transformer: Box<dyn Transformer>,
 
-   **model: Box<dyn Predict<Vec<f64>, f64>>,**
+   model: Box<dyn Predict<Vec<f64>, f64>>,
 
-   **}**
+   }
 
-   **impl Pipeline {**
+   impl Pipeline {
 
-   **fn fit(&mut self, x: Vec<Vec<f64>>, y: Vec<f64>) {**
+   fn fit(&mut self, x: Vec<Vec<f64>>, y: Vec<f64>) {
 
-   **let x = self.transformer.transform(x);**
+   let x = self.transformer.transform(x);
 
-   [**self.model.fit**](http://self.model.fit/)**(x, y);**
+   [self.model.fit**](http://self.model.fit/)(x, y);
 
-   **}**
+   }
 
-   **}**`
+   }
+```
+
 
    Встраиваем трейты в структуру.
 

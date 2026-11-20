@@ -1,0 +1,24 @@
+    Updating crates.io index
+     Locking 19 packages to highest compatible versions
+   Compiling crossbeam-utils v0.8.23
+   Compiling proc-macro2 v1.0.107
+   Compiling crossbeam-epoch v0.9.21
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling crossbeam-deque v0.8.8
+   Compiling serde_core v1.0.229
+   Compiling rayon-core v1.13.0
+   Compiling serde v1.0.229
+   Compiling anyhow v1.0.104
+   Compiling syn v3.0.10
+   Compiling memchr v2.8.3
+   Compiling csv-core v0.1.13
+   Compiling either v1.19.0
+   Compiling ryu v1.0.23
+   Compiling itoa v1.0.19
+   Compiling rayon v1.12.0
+   Compiling csv v1.4.0
+   Compiling serde_derive v1.0.229
+   Compiling rentals_analysis v0.1.0 (/mnt/samsung/curses/RustML/4_13_Центр_разброс/Самое_частое_значение)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.71s
+     Running `target/debug/rentals_analysis`

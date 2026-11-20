@@ -1,0 +1,19 @@
+[package]
+name = "quality_control"
+version = "0.1.0"
+edition = "2021"
+authors = ["QC Team"]
+description = "Контроль качества розлива: параллельный расчёт дисперсии/СКО и сверка с ML-эталоном (ndarray)"
+
+[dependencies]
+# Многопоточность: параллельные итераторы для расчёта суммы квадратов отклонений.
+rayon = "1"
+# ML-экосистема: ndarray — numpy-эквивалент в Rust, используется как эталон (np.std).
+ndarray = "0.16"
+# Макросы крейтов: derive(Serialize) для доменных типов.
+serde = { version = "1", features = ["derive"] }
+# Макросы крейтов: derive(Error) для типизированных ошибок.
+thiserror = "1"
+
+[profile.release]
+opt-level = 2

@@ -1,0 +1,18 @@
+[package]
+name = "delivery_report"
+version = "0.1.0"
+edition = "2021"
+authors = ["z.ai agent"]
+
+[dependencies]
+# Макросы: serde с derive-макросами для (де)сериализации модели данных.
+serde = { version = "1", features = ["derive"] }
+# Чтение CSV.
+csv = "1"
+# Многопоточность: параллельные итераторы и параллельная сортировка.
+rayon = "1"
+# Машинное обучение: кластеризация KMeans для сегментации доставок.
+smartcore = "0.3"
+
+[profile.release]
+opt-level = 2

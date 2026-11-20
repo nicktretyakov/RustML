@@ -1,0 +1,20 @@
+    Updating crates.io index
+     Locking 15 packages to highest compatible versions
+      Adding ndarray v0.16.1 (available: v0.17.2)
+   Compiling autocfg v1.5.1
+   Compiling crossbeam-utils v0.8.23
+   Compiling crossbeam-epoch v0.9.21
+   Compiling crossbeam-deque v0.8.8
+   Compiling num-traits v0.2.19
+   Compiling matrixmultiply v0.3.11
+   Compiling rayon-core v1.13.0
+   Compiling rawpointer v0.2.1
+   Compiling either v1.19.0
+   Compiling num-integer v0.1.47
+   Compiling num-complex v0.4.6
+   Compiling ndarray v0.16.1
+   Compiling rayon v1.12.0
+   Compiling house_prices v0.1.0 (/mnt/samsung/curses/RustML/4_13_Центр_разброс/Среднее_медиана)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.56s
+     Running `target/debug/house_prices`
+Error reading input: invalid float literal

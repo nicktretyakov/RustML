@@ -1,0 +1,17 @@
+[package]
+name = "house_prices"
+version = "0.1.0"
+edition = "2021"
+description = "House price statistics (mean, median, count below mean) with OOP/SOLID architecture, rayon multithreading and ndarray (ML foundation)."
+
+[dependencies]
+# `ndarray` is the Rust equivalent of numpy and the core data structure
+# underlying the Rust ML ecosystem (linfa, smartcore). Used here as the
+# ML-friendly tensor type for the price vector.
+ndarray = "0.16"
+
+# Data-parallel iteration: sums and outlier scans run across threads.
+rayon = "1.10"
+
+[profile.release]
+opt-level = 3

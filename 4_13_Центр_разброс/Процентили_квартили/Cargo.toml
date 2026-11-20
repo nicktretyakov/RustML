@@ -1,0 +1,15 @@
+[package]
+name = "water_quartiles"
+version = "0.1.0"
+edition = "2021"
+authors = ["ZCode Agent"]
+description = "Анализ квартилей расхода воды с применением SOLID, ООП, макросов и ML-крейтов"
+
+[dependencies]
+# ndarray — Rust-аналог numpy: многомерные массивы для ML-конвейеров
+ndarray = "0.16"
+# statrs — статистические распределения и описательная статистика (ML/EDA)
+statrs = "0.18"
+
+[profile.release]
+opt-level = 3

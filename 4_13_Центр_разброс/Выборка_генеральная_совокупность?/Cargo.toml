@@ -1,0 +1,16 @@
+[package]
+name = "bat-wings-std"
+version = "0.1.0"
+edition = "2021"
+authors = ["Z User"]
+description = "Sample vs population standard deviation of bat wing spans, with OOP/SOLID design, multithreading and an ML standardizer."
+
+[dependencies]
+# External crates:
+#  * ndarray  — n-dimensional arrays, the Rust analogue of NumPy.
+#  * rayon    — data-parallel iterators for lock-free multithreaded reduction.
+ndarray = "0.16"
+rayon = "1.10"
+
+[profile.release]
+opt-level = 3
