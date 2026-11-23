@@ -1,0 +1,3 @@
+   Compiling lamp_life v0.1.0 (/mnt/samsung/curses/RustML/4_14_Распределения/Правило_68_95_99)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.56s
+     Running `target/debug/lamp_life`

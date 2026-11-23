@@ -1,0 +1,75 @@
+    Updating crates.io index
+     Locking 57 packages to highest compatible versions
+      Adding linfa v0.7.1 (available: v0.8.1)
+      Adding linfa-preprocessing v0.7.1 (available: v0.8.1)
+      Adding ndarray v0.15.6 (available: v0.17.2)
+      Adding sprs v0.11.1 (available: v0.11.6)
+ Downloading crates ...
+  Downloaded linfa-preprocessing v0.7.1
+   Compiling autocfg v1.5.1
+   Compiling libm v0.2.16
+   Compiling libc v0.2.191
+   Compiling zerocopy v0.8.64
+   Compiling cfg-if v1.0.5
+   Compiling proc-macro2 v1.0.107
+   Compiling num-traits v0.2.19
+   Compiling matrixmultiply v0.3.11
+   Compiling rawpointer v0.2.1
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling encoding_index_tests v0.1.4
+   Compiling crossbeam-utils v0.8.23
+   Compiling syn v2.0.119
+   Compiling thiserror v1.0.69
+   Compiling approx v0.4.0
+   Compiling num-integer v0.1.47
+   Compiling num-complex v0.4.6
+   Compiling crossbeam-epoch v0.9.21
+   Compiling ndarray v0.15.6
+   Compiling indexmap v1.9.3
+   Compiling crossbeam-deque v0.8.8
+   Compiling memchr v2.8.3
+   Compiling either v1.19.0
+   Compiling aho-corasick v1.1.5
+   Compiling thiserror-impl v1.0.69
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling regex-syntax v0.8.12
+   Compiling rayon-core v1.13.0
+   Compiling linfa v0.7.1
+   Compiling hashbrown v0.12.3
+   Compiling smallvec v1.16.6
+   Compiling sprs v0.11.1
+   Compiling rand_distr v0.4.3
+   Compiling itertools v0.10.5
+   Compiling noisy_float v0.2.1
+   Compiling encoding-index-japanese v1.20141219.5
+   Compiling encoding-index-singlebyte v1.20141219.5
+   Compiling encoding-index-korean v1.20141219.5
+   Compiling regex-automata v0.4.19
+   Compiling encoding-index-tradchinese v1.20141219.5
+   Compiling encoding-index-simpchinese v1.20141219.5
+   Compiling tinyvec v1.13.3
+   Compiling encoding v0.2.33
+   Compiling ndarray-stats v0.5.1
+   Compiling unicode-normalization v0.1.26
+   Compiling ndarray-rand v0.14.0
+   Compiling linfa-linalg v0.1.0
+   Compiling rayon v1.12.0
+   Compiling regex v1.13.2
+   Compiling linfa-preprocessing v0.7.1
+   Compiling arcade_zscore v0.1.0 (/mnt/samsung/curses/RustML/4_14_Распределения/Z_оценки)
+warning: unused import: `rayon::prelude::*`
+ --> src/main.rs:4:5
+  |
+4 | use rayon::prelude::*;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `arcade_zscore` (bin "arcade_zscore") generated 1 warning (run `cargo fix --bin "arcade_zscore" -p arcade_zscore` to apply 1 suggestion)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 22.33s
+     Running `target/debug/arcade_zscore`

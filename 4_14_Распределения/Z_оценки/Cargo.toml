@@ -1,0 +1,10 @@
+[package]
+name = "arcade_zscore"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ndarray = "0.15"
+linfa = "0.7"
+linfa-preprocessing = "0.7"
+rayon = "1.10"

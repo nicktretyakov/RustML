@@ -1,0 +1,3 @@
+   Compiling bolts v0.1.0 (/mnt/samsung/curses/RustML/4_14_Распределения/Нормальная_кривая)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.08s
+     Running `target/debug/bolts`
