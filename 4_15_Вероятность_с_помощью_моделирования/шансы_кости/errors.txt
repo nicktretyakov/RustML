@@ -1,0 +1,4 @@
+   Compiling casino-fair v0.1.0 (/mnt/samsung/curses/RustML/4_15_Вероятность_с_помощью_моделирования/шансы_кости)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.73s
+     Running `target/debug/casino-fair`
+[ML cross-check] LogisticRegression P(double) = 0.163

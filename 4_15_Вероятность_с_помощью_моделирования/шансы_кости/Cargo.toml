@@ -1,0 +1,19 @@
+[package]
+name = "casino-fair"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+
+[dependencies]
+rand = "0.8"
+rayon = "1.10"
+
+# Форк smartcore с поддержкой predict_proba; алиас сохраняет путь smartcore::...
+smartcore = { package = "smartcore_proba", version = "0.4.0-proba.0" }
+# версия ndarray должна совпадать с той, что использует smartcore_proba
+ndarray = "0.15"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1

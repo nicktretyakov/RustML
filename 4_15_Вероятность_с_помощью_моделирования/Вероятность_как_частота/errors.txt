@@ -1,0 +1,25 @@
+    Updating crates.io index
+     Locking 22 packages to highest compatible versions
+      Adding rand v0.8.8 (available: v0.10.4)
+      Adding rand_pcg v0.3.1 (available: v0.10.3)
+ Downloading crates ...
+  Downloaded anyhow v1.0.105
+   Compiling libc v0.2.191
+   Compiling crossbeam-utils v0.8.23
+   Compiling crossbeam-epoch v0.9.21
+   Compiling cfg-if v1.0.5
+   Compiling zerocopy v0.8.64
+   Compiling crossbeam-deque v0.8.8
+   Compiling rayon-core v1.13.0
+   Compiling anyhow v1.0.105
+   Compiling either v1.19.0
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling rand_pcg v0.3.1
+   Compiling rayon v1.12.0
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling penalty v0.1.0 (/mnt/samsung/curses/RustML/4_15_Вероятность_с_помощью_моделирования/Вероятность_как_частота)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.54s
+     Running `target/debug/penalty`

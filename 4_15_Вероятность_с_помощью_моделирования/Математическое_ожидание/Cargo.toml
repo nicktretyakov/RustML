@@ -1,0 +1,19 @@
+[package]
+name = "prize-wheel"
+version = "0.1.0"
+edition = "2021"
+description = "Prize wheel simulator with OOP/SOLID, macros, parallelism and ML crates"
+authors = ["You <you@example.com>"]
+license = "MIT"
+
+[dependencies]
+rand        = "0.8"      # генерация случайных чисел
+rand_distr  = "0.4"      # WeightedIndex для взвешенной выборки
+rayon       = "1.10"     # параллельные итераторы (multithreading)
+ndarray     = "0.15"     # многомерные массивы (совместим с linfa 0.7)
+linfa       = "0.7"      # статистика / машинное обучение (mean)
+
+[profile.release]
+opt-level = 3
+lto       = true
+codegen-units = 1

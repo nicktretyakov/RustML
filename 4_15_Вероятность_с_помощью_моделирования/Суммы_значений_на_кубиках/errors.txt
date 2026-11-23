@@ -1,0 +1,11 @@
+    Updating crates.io index
+     Locking 6 packages to highest compatible versions
+   Compiling crossbeam-utils v0.8.23
+   Compiling crossbeam-epoch v0.9.21
+   Compiling crossbeam-deque v0.8.8
+   Compiling rayon-core v1.13.0
+   Compiling either v1.19.0
+   Compiling rayon v1.12.0
+   Compiling damage-rolls v0.1.0 (/mnt/samsung/curses/RustML/4_15_Вероятность_с_помощью_моделирования/Суммы_значений_на_кубиках)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.29s
+     Running `target/debug/damage-rolls`

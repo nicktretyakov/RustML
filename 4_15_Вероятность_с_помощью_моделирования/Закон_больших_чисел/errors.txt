@@ -1,0 +1,97 @@
+    Updating crates.io index
+     Locking 130 packages to highest compatible versions
+      Adding linfa v0.7.1 (available: v0.8.1)
+      Adding linfa-linear v0.7.1 (available: v0.8.1)
+      Adding ndarray v0.15.6 (available: v0.17.2)
+      Adding rand v0.8.8 (available: v0.10.4)
+      Adding rand_pcg v0.3.1 (available: v0.10.3)
+      Adding sprs v0.11.1 (available: v0.11.6)
+   Compiling cfg-if v1.0.5
+   Compiling autocfg v1.5.1
+   Compiling libc v0.2.191
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling zerocopy v0.8.64
+   Compiling num-traits v0.2.19
+   Compiling matrixmultiply v0.3.11
+   Compiling pkg-config v0.3.34
+   Compiling rawpointer v0.2.1
+   Compiling simd-adler32 v0.3.10
+   Compiling num-complex v0.4.6
+   Compiling num-integer v0.1.47
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling approx v0.4.0
+   Compiling syn v2.0.119
+   Compiling find-msvc-tools v0.1.15
+   Compiling adler2 v2.0.1
+   Compiling crc32fast v1.5.5
+   Compiling shlex v2.0.1
+   Compiling thiserror v1.0.69
+   Compiling semver v1.0.28
+   Compiling cc v1.11.3
+   Compiling rustc_version v0.4.1
+   Compiling ndarray v0.15.6
+   Compiling crossbeam-utils v0.8.23
+   Compiling freetype-sys v0.20.1
+   Compiling thiserror-impl v1.0.69
+   Compiling pathfinder_simd v0.5.6
+   Compiling miniz_oxide v0.9.1
+   Compiling yeslogic-fontconfig-sys v6.0.1
+   Compiling crossbeam-epoch v0.9.21
+   Compiling anyhow v1.0.105
+   Compiling flate2 v1.1.11
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling libloading v0.8.9
+   Compiling ppv-lite86 v0.2.21
+   Compiling option-ext v0.2.0
+   Compiling paste v1.0.15
+   Compiling crossbeam-deque v0.8.8
+   Compiling byteorder v1.5.0
+   Compiling bitflags v1.3.2
+   Compiling color_quant v1.1.0
+   Compiling png v0.17.16
+   Compiling dirs-sys v0.5.0
+   Compiling dlib v0.5.3
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling same-file v1.0.6
+   Compiling font-kit v0.14.3
+   Compiling weezl v0.1.12
+   Compiling jpeg-decoder v0.3.2
+   Compiling linfa v0.7.1
+   Compiling plotters-backend v0.3.7
+   Compiling rayon-core v1.13.0
+   Compiling bytemuck v1.25.2
+   Compiling smallvec v1.16.6
+   Compiling log v0.4.35
+   Compiling once_cell v1.21.4
+   Compiling sprs v0.11.1
+   Compiling image v0.24.9
+   Compiling pathfinder_geometry v0.5.1
+   Compiling argmin-math v0.3.0
+   Compiling gif v0.12.0
+   Compiling walkdir v2.5.1
+   Compiling dirs v6.0.0
+   Compiling rand_xoshiro v0.6.0
+   Compiling instant v0.1.13
+   Compiling bitflags v2.13.2
+   Compiling iana-time-zone v0.1.65
+   Compiling lazy_static v1.5.1
+   Compiling float-ord v0.3.2
+   Compiling chrono v0.4.45
+   Compiling plotters-bitmap v0.3.7
+   Compiling argmin v0.9.0
+   Compiling plotters-svg v0.3.7
+   Compiling linfa-linalg v0.1.0
+   Compiling either v1.19.0
+   Compiling ttf-parser v0.20.0
+   Compiling rayon v1.12.0
+   Compiling rand_pcg v0.3.1
+   Compiling linfa-linear v0.7.1
+   Compiling plotters v0.3.7
+   Compiling cereal_toys v0.1.0 (/mnt/samsung/curses/RustML/4_15_Вероятность_с_помощью_моделирования/Закон_больших_чисел)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 28.16s
+     Running `target/debug/cereal_toys`
