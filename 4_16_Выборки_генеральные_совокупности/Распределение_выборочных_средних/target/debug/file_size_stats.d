@@ -1,0 +1,1 @@
+/mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/Распределение_выборочных_средних/target/debug/file_size_stats: /mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/Распределение_выборочных_средних/src/main.rs

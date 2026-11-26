@@ -1,0 +1,1 @@
+/mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/больше_выборка_меньше_шум/target/debug/bag_quality_control: /mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/больше_выборка_меньше_шум/src/main.rs

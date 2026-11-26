@@ -1,0 +1,3 @@
+   Compiling bamboo_sampling v0.1.0 (/mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/Средние_значения_различаются)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.49s
+     Running `target/debug/bamboo_sampling`

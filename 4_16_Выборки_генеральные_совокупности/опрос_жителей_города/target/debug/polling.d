@@ -1,0 +1,1 @@
+/mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/опрос_жителей_города/target/debug/polling: /mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/опрос_жителей_города/src/main.rs

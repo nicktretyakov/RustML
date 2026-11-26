@@ -1,0 +1,66 @@
+    Updating crates.io index
+     Locking 59 packages to highest compatible versions
+      Adding rand v0.8.8 (available: v0.10.4)
+      Adding rand_chacha v0.3.1 (available: v0.10.0)
+      Adding rand_distr v0.4.3 (available: v0.6.0)
+      Adding statrs v0.18.0 (available: v0.19.1)
+      Adding thiserror v1.0.69 (available: v2.0.21)
+ Downloading crates ...
+  Downloaded clap_derive v4.6.9
+  Downloaded clap v4.6.10
+  Downloaded clap_builder v4.6.10
+   Compiling autocfg v1.5.1
+   Compiling libm v0.2.16
+   Compiling proc-macro2 v1.0.107
+   Compiling libc v0.2.191
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling zerocopy v0.8.66
+   Compiling num-traits v0.2.19
+   Compiling cfg-if v1.0.5
+   Compiling crossbeam-utils v0.8.23
+   Compiling getrandom v0.2.17
+   Compiling paste v1.0.15
+   Compiling rand_core v0.6.4
+   Compiling bytemuck v1.25.2
+   Compiling crossbeam-epoch v0.9.21
+   Compiling safe_arch v0.7.4
+   Compiling matrixmultiply v0.3.11
+   Compiling crossbeam-deque v0.8.8
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v1.0.0
+   Compiling wide v0.7.33
+   Compiling num-complex v0.4.6
+   Compiling num-integer v0.1.47
+   Compiling approx v0.5.1
+   Compiling colorchoice v1.0.5
+   Compiling rayon-core v1.13.0
+   Compiling anstyle-query v1.1.5
+   Compiling rawpointer v0.2.1
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstyle v1.0.14
+   Compiling anstream v1.0.0
+   Compiling num-rational v0.4.2
+   Compiling simba v0.9.1
+   Compiling syn v3.0.10
+   Compiling syn v2.0.119
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling clap_lex v1.1.2
+   Compiling rand_distr v0.4.3
+   Compiling heck v0.5.0
+   Compiling typenum v1.20.1
+   Compiling thiserror v1.0.69
+   Compiling strsim v0.11.1
+   Compiling clap_builder v4.6.10
+   Compiling clap_derive v4.6.9
+   Compiling thiserror-impl v1.0.69
+   Compiling nalgebra v0.33.3
+   Compiling either v1.19.0
+   Compiling rayon v1.12.0
+   Compiling clap v4.6.10
+   Compiling statrs v0.18.0
+   Compiling sheep_farm v0.1.0 (/mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/Генеральная_совокупность_выборка)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 27.42s
+     Running `target/debug/sheep_farm`
