@@ -1,1 +1,0 @@
-/mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/Средние_значения_различаются/target/debug/bamboo_sampling: /mnt/samsung/curses/RustML/4_16_Выборки_генеральные_совокупности/Средние_значения_различаются/src/main.rs
