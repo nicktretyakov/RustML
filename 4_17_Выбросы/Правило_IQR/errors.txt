@@ -1,0 +1,6 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+     Running `target/debug/iqr_fences`
+
+thread 'main' (3375) panicked at src/main.rs:114:19:
+parse f64: ParseFloatError { kind: Empty }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

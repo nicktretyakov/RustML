@@ -1,0 +1,21 @@
+[package]
+name = "iqr_fences"
+version = "0.1.0"
+edition = "2021"
+description = "IQR fences + outlier detection (Rust port of the numpy version)"
+
+[dependencies]
+# Массив-тип из ML-экосистемы Rust (linfa / smartcore / ndarray-stats)
+ndarray = "0.15"
+
+# Параллельные итераторы для многопоточности
+rayon = "1"
+
+# (опционально) готовые перцентили/статистика — если захотите заменить
+# ручную реализацию percentile на готовую из ML-стека:
+# ndarray-stats = "0.5"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

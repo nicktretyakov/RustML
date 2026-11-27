@@ -1,0 +1,15 @@
+[package]
+name = "ride_iqr"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ndarray       = "0.15"          # числовой движок (основа linfa)
+ndarray-stats = "0.5"           # квантили / перцентили в духе numpy
+rayon         = "1.10"          # многопоточность (par_iter)
+noisy_float   = "0.2"           # N64 — требование quantiles_mut в ndarray-stats 0.5
+
+[profile.release]
+opt-level = 3
+lto       = true
+codegen-units = 1
