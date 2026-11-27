@@ -1,0 +1,7 @@
+   Compiling museum_humidity_analyzer v0.1.0 (/mnt/samsung/curses/RustML/4_17_Выбросы/сбои_датчиков)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 12.84s
+     Running `target/debug/museum_humidity_analyzer`
+
+thread 'main' (27925) panicked at /home/n/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/plotters-0.3.7/src/coord/ranged1d/types/numeric.rs:244:1:
+attempt to multiply with overflow
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
